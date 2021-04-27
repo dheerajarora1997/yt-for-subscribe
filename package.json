@@ -1,0 +1,20 @@
+{
+  "name": "yt-for-subscribe",
+  "version": "1.0.0",
+  "description": "youtube applicationn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "bootstrap-scss": "^4.5.3",
+    "bootstrap-tour": "^0.12.0",
+    "font-awesome-scss": "^1.0.0",
+    "jquery-bootstrap-scrolling-tabs": "^2.6.1",
+    "node-sass": "^5.0.0",
+    "owl.carousel": "^2.3.4"
+  }
+}
