@@ -21,6 +21,9 @@ h5,
 h6 {
     font-weight: 600;
 }
+a{
+  @extend .text-decoration-none;
+}
 
 .full-page-spinner,
 .section-spinner{
