@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./dist/style/css/style.css">
+    <link rel="stylesheet" href="./dist/style/css/page/login.css">
 </head>
 
 <body>
     <main>
         <div class="login-page">
-            <div class="form-card">
-                <form>
+            <div class="login-page-form p-5 rounded-lg shadow">
+                <form action="./dashboard.html">
                     <div class="floating-input mb-3">
                         <input type="email" class="form-control" id="email-id"
                             placeholder="Email Address*" required="">
@@ -25,11 +26,11 @@
                         <label for="password">Password<small class="text-danger">*</small></label>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <a href="javascript:void(0);">Forgot Password</a>
-                        <input type="submit" value="Login" class="btn btn-tertiary rounded-pill px-4">
+                        <a href="javascript:void(0);">Forgot Password?</a>
+                        <input type="submit" value="Login" class="btn btn-tertiary rounded-pill px-4 py-2">
                     </div>
-                    <div class="d-flex mb-3">
-                        <a href="javascript:void(0);" class="btn btn-outline-secondary rounded-pill px-4">Login with Google</a>
+                    <div class="d-block mb-3">
+                        <a href="javascript:void(0);" class="d-inline-block w-100 mt-3 btn btn-outline-secondary rounded-pill px-4 py-2">Login with Google</a>
                     </div>
                 </form>
             </div>
