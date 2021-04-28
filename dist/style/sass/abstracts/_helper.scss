@@ -1,0 +1,12 @@
+.flex-center{
+    @extend %flex-center;
+  }
+
+.content-none {
+    @extend %content-none;
+  }
+
+  .text-truncate-2{
+    @extend  %text-truncate-2;
+  }
+

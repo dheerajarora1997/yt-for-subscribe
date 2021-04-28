@@ -1,0 +1,43 @@
+@import '../components/scroll-bar';
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 15px;
+    color: $base-color;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+.full-page-spinner,
+.section-spinner{
+  position: fixed;
+  width:100%;
+  height: 100%;
+  top:0;
+  z-index: 99999;
+  background: rgba(255,255,255,0.5);
+  @extend %flex-center;
+  i{
+    color: red;
+  }
+}
+
+.section-spinner{
+  position: absolute;
+  z-index: 1;
+  background: rgba(255,255,255,0.8);
+}

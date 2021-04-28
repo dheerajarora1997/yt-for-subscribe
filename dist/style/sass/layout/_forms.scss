@@ -1,0 +1,71 @@
+label {
+  @extend .mb-1;
+  font-size: 90%;
+  color: #999;
+}
+
+input,
+textarea {
+  @extend .py-2;
+}
+
+select option {
+  @extend .px-0;
+}
+
+input,
+textarea,
+select {
+  @extend .px-0;
+  border-width: 0 0 1px 0 !important;
+  @extend .rounded-0;
+
+  &:focus {
+    border-color: rgb(118, 118, 118);
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  &:disabled {
+    opacity: .5;
+  }
+}
+
+.form-group {
+  @extend .mb-4;
+}
+
+.field-disabled{
+  pointer-events: none;
+  opacity: .5;
+}
+
+
+.floating-input {
+    position: relative;
+    padding-top: 20px;
+
+    label {
+        position: absolute;
+      background: white;
+      opacity: 0;
+      top: 9px;
+      left: 0;
+      transition: all 0.5s ease 0s;
+      -webkit-transition: all 0.5s ease 0s;
+      -moz-transition: all 0.5s ease 0s;
+      -ms-transition: all 0.5s ease 0s;
+      -o-transition: all 0.5s ease 0s;
+    }
+
+    input,
+    select,
+    textarea {
+      position: relative;
+
+      &:not(:placeholder-shown)+label {
+        top: 0;
+        opacity: 1;
+      }
+    }
+}
