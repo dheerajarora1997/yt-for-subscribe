@@ -87,6 +87,15 @@
   .fi-long-arrow:before {
     content: "\e901";
   }
+
+  .fi-long-arrow-left {
+    &:before {
+      content: "\e901";
+      @extend .d-inline-block;
+      @include rotate(180deg);
+    }
+  }
+
   .fi-chat-faq:before {
     content: "\e902";
   }

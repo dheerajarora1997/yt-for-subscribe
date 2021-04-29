@@ -5,7 +5,7 @@ $(function () {
 
 $(document).ready(function () {
     $(".sidebar ul.nav li:first-child").click(function () {
-        $(".sidebar ul.nav li:first-child i").toggleClass("fa-angle-left icon-navigation");
+        $(".sidebar ul.nav li:first-child i").toggleClass("fi-long-arrow-left fi-navigation");
         $(".wrapper").toggleClass("active");
     });
 });
