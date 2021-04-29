@@ -23,3 +23,7 @@
   min-width: 20px;
   background: #ee4f57;
 }
+
+.d-grid{
+  @extend %d-grid;
+}
