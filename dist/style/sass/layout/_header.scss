@@ -1,0 +1,43 @@
+.dropdown {
+    a {
+      @extend .position-relative;
+
+      &[aria-expanded="true"]:before {
+        @extend .fa;
+        @extend .fa-caret-up;
+        @extend .position-absolute;
+        @extend .text-white;
+        bottom: -23px;
+        right: 7px;
+        font-size: 41px;
+        z-index: 1111;
+      }
+    }
+
+    .dropdown-menu {
+      min-width: 230px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+      &.menu-right {
+        @extend .position-absolute;
+        left: auto;
+        right: 0;
+      }
+
+      &.notification-dropdown {
+        min-width: 280px;
+
+        li:hover {
+          background: #fafafa;
+
+        }
+
+        small {
+          line-height: 1.1;
+        }
+      }
+    }
+  }

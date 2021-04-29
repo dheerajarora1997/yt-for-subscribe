@@ -1,12 +1,25 @@
-.flex-center{
-    @extend %flex-center;
-  }
+.flex-center {
+  @extend %flex-center;
+}
 
 .content-none {
-    @extend %content-none;
-  }
+  @extend %content-none;
+}
 
-  .text-truncate-2{
-    @extend  %text-truncate-2;
-  }
+.text-truncate-2 {
+  @extend %text-truncate-2;
+}
 
+.badge-notify {
+  @extend .position-absolute;
+  @extend .text-center;
+  @extend .d-block;
+  top: 4px;
+  right: -2px;
+  border-radius: 50%;
+  font-size: 11px;
+  line-height: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  background: #ee4f57;
+}

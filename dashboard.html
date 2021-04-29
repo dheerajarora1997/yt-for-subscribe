@@ -14,7 +14,7 @@
     <main>
         <div class="container-fluid p-0">
             <div class="wrapper active">
-                <div class="sidebar">
+                <div class="sidebar bg-tertiary text-white">
                     <ul class="nav nav-sidebar flex-nowrap flex-column w-100">
                         <li class="text-center w-100 d-block py-1  mb-2">
                             <a href="javascript:void(0);" class="w-100 d-flex align-items-center pl-2 pr-3 py-1">
@@ -23,7 +23,7 @@
                         </li>
                         <li class="text-center w-100 d-block">
                             <a href="index.html" class="active w-100 d-flex align-items-center pl-2 pr-3 mb-1">
-                                <i class="fa fa-technometer p-2" data-toggle="tooltip" data-placement="right"
+                                <i class="fa fa-tachometer p-2" data-toggle="tooltip" data-placement="right"
                                     data-container="body" title="Dashboard"></i>
                                 <span class="ml-3">Dashboard</span>
                             </a>
@@ -69,9 +69,124 @@
                         </li>
                     </ul>
                 </div>
+                <div class="content">
+                    <header class="px-5">
+                        <nav class="navbar align-items-center border-bottom px-0">
+                            <a href="javascript:void(0);" class="navbar-brand d-flex">
+                                <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+                            </a>
+                            <ul class="navbar-nav ml-auto flex-row align-items-center">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle content-none px-1 mr-4" href="#"
+                                        id="notificationDropdown" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-bell-o bell-icon" aria-hidden="true"></i>
+                                        <span class="badge-notify text-white">33</span>
+                                    </a>
+                                    <div class="dropdown-menu notification-dropdown border-0 p-0 menu-right">
+                                        <ul class="list-group list-group-flush border-0">
+                                            <li class="list-group-item">
+                                                <a href="javascript:void(0);">
+                                                    <span class="small mb-1 d-block">Sed ut perspiciatis unde omnis iste
+                                                        natus error sit voluptatem accusantium doloremque
+                                                        laudantium.</span>
+                                                    <small class="text-muted d-block text-right">
+                                                        Mar 09, 2021
+                                                    </small>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="javascript:void(0);">
+                                                    <span class="small mb-1 d-block">Sed ut perspiciatis unde omnis iste
+                                                        natus error sit voluptatem accusantium doloremque
+                                                        laudantium.</span>
+                                                    <small class="text-muted d-block text-right">
+                                                        Mar 09, 2021
+                                                    </small>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="javascript:void(0);">
+                                                    <span class="small mb-1 d-block">Sed ut perspiciatis unde omnis iste
+                                                        natus error sit voluptatem accusantium doloremque
+                                                        laudantium.</span>
+                                                    <small class="text-muted d-block text-right">
+                                                        Mar 09, 2021
+                                                    </small>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="text-center my-3 d-inline-block w-100">
+                                            <a href="javascript:void(0);"
+                                                class="btn btn-outline-secondary btn-sm rounded-0">
+                                                <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
+                                                Load More
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle content-none" href="javascript:void(0);" id="profileDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="block bg-secondary text-white p-2 text-sm rounded-circle">
+                                            RP
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-menu border-0 p-0 menu-right">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="./my-profile.html" class="font-medium">
+                                                    Ritvik Pathak
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="./index.html" class="font-weight-normal">
+                                                    <i class="icon-dashboard mr-2 primary-color" aria-hidden="true"></i>
+                                                    My Dashboard
+                                                </a>
+                                            </li>
+
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="./my-profile.html" class="font-weight-normal">
+                                                    <i class="icon-user-o mr-2 primary-color" aria-hidden="true"></i>
+                                                    My Profile
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="./change-password.html" class="font-weight-normal">
+                                                    <i class="icon-change-password mr-2 primary-color"
+                                                        aria-hidden="true"></i>
+                                                    Change Password
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="javascript:void(0);" class="font-weight-normal">
+                                                    <i class="icon-sign-out mr-2 primary-color" aria-hidden="true"></i>
+                                                    Logout
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <div class="page-content px-5">
+                        <section class="pt-3">
+                            <div class="page-heading">
+                                <h1 class="h3">Hi John</h1>
+                                <p class="">Welcome to our website.</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 </body>
+<script src="dist/js/vendor/jquery/jquery.min.js"></script>
+<script src="dist/js/vendor/bootstrap-js/popper.min.js"></script>
+<script src="dist/js/vendor/bootstrap-js/bootstrap.min.js"></script>
+<script src="dist/js/common.js"></script>
 
 </html>

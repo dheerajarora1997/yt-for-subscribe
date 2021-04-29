@@ -8,7 +8,8 @@
 
 body {
     font-size: 15px;
-    color: $base-color;
+    background: #fef6f6;
+    color: #666666;
     -webkit-overflow-scrolling: touch;
     -webkit-font-smoothing: antialiased;
 }
@@ -20,7 +21,9 @@ h4,
 h5,
 h6 {
     font-weight: 600;
+    color: #323232;
 }
+
 a{
   @extend .text-decoration-none;
 }
