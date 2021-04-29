@@ -2,12 +2,12 @@
     @extend .position-fixed;
     @extend .d-flex;
     @extend .shadow-lg;
-    color: var(--primary-text-color);
     min-width: $sidebar-width;
     max-width: $sidebar-width;
     transition: all .3s;
     height: 100%;
     left: 0;
+    z-index: 9;
 
     li {
         font-size: $font-size-base;
