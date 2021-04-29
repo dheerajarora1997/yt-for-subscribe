@@ -1,6 +1,5 @@
 .sidebar {
     @extend .position-fixed;
-    @extend .d-flex;
     @extend .shadow-lg;
     min-width: $sidebar-width;
     max-width: $sidebar-width;

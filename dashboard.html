@@ -14,7 +14,7 @@
     <main>
         <div class="container-fluid p-0">
             <div class="wrapper active">
-                <div class="sidebar bg-tertiary text-white">
+                <div class="sidebar bg-tertiary text-white d-none d-md-flex">
                     <ul class="nav nav-sidebar flex-nowrap flex-column w-100">
                         <li class="text-center w-100 d-block py-1  mb-2">
                             <a href="javascript:void(0);" class="w-100 d-flex align-items-center pl-2 pr-3 py-1">
@@ -59,7 +59,7 @@
                     </ul>
                 </div>
                 <div class="content">
-                    <header class="px-5">
+                    <header class="px-3 px-sm-5">
                         <nav class="navbar align-items-center border-bottom px-0">
                             <a href="javascript:void(0);" class="navbar-brand d-flex text-tertiary">
                                 <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
@@ -153,7 +153,7 @@
                             </ul>
                         </nav>
                     </header>
-                    <div class="page-content px-5">
+                    <div class="page-content px-sm-5 px-3">
                         <section class="pt-3">
                             <div class="alert alert-info alert-dismissible fade show" role="alert">
                                 <small>Hey John!</small> Alert example.
@@ -178,30 +178,30 @@
                                                 </div>
                                                 <div class="campaign-detail px-0 px-md-3">
                                                     <div class="grid">
-                                                        <div class="like-col px-0 px-xl-3 d-flex justify-content-between flex-lg-column flex-row">
+                                                        <div class="like-col px-0 px-xl-3 d-flex align-items-center align-items-sm-start justify-content-between flex-lg-column flex-row">
                                                             <small class="text-muted">Likes</small>
                                                             <span>33</span>
                                                         </div>
-                                                        <div class="cmnt-col px-0 px-xl-3 d-flex justify-content-between flex-lg-column flex-row">
+                                                        <div class="cmnt-col px-0 px-xl-3 d-flex align-items-center align-items-sm-start justify-content-between flex-lg-column flex-row">
                                                             <small class="text-muted">Comments</small>
                                                             <span>33</span>
                                                         </div>
-                                                        <div class="sub-col px-0 px-xl-3 d-flex justify-content-between flex-lg-column flex-row">
+                                                        <div class="sub-col px-0 px-xl-3 d-flex align-items-center align-items-sm-start justify-content-between flex-lg-column flex-row">
                                                             <small class="text-muted">Subscribers</small>
                                                             <span>33</span>
                                                         </div>
-                                                        <div class="cam-col px-0 px-xl-3 d-flex justify-content-between flex-lg-column flex-row">
+                                                        <div class="cam-col px-0 px-xl-3 d-flex align-items-center align-items-sm-start justify-content-between flex-lg-column flex-row">
                                                             <small class="text-muted">Campaign</small>
                                                             <span>100 Likes</span>
                                                         </div>
                                                     </div>
-                                                    <div class="d-flex flex-column flex-xl-row justify-content-between px-0 px-xl-3 pt-3">
-                                                        <div class="d-flex align-items-center">
+                                                    <div class="d-flex flex-column flex-xl-row justify-content-between px-0 px-xl-3 pt-1">
+                                                        <div class="d-flex align-items-center mb-1 mb-sm-0 justify-content-between justify-content-sm-start">
                                                             <small class="text-muted">Start Date :</small>
                                                             <span class="text-tertiary ml-3">23 Apr, 2021</span>
                                                         </div>
                                                         <div class="d-flex flex-column flex-sm-row align-items-sm-center px-0 px-xl-4  ml-xl-2">
-                                                            <small class="text-muted">Campaign Status :</small>
+                                                            <small class="text-muted mb-2 mb-sm-0">Campaign Status :</small>
                                                             <div class="progress rounded-pill ml-0 ml-sm-3 ">
                                                                 <div class="bg-tertiary progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
                                                               </div>
@@ -227,6 +227,74 @@
                             </div>
                         </section>
                     </div>
+                    <footer class="d-sm-none d-block">
+                        <nav>
+                            <ul class="mb-0">
+                                <li><a href="./faqs.html" data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="My Queries"><i class="fi fi-queries p-3 text-tertiary"></i></a></li>
+                                <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="Program Finder"><i class="fi fi-finder p-3 text-tertiary"></i></a></li>
+                                <li><a href="javascript:void(0);" class="active" data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="Dashboard"><i class="fi fi-dashboard p-3 text-tertiary"></i></a></li>
+                                <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-container="body" title="" data-original-title="My Applications"><i class="fi fi-file p-3 text-tertiary"></i></a></li>
+                                <li><a href="javascript:void(0);" class="mob-nav"><i class="fi fi-navigation p-3 text-tertiary"></i></a></li>
+                            </ul>
+                        </nav>
+                        <div class="cont-rght-side-fixed bg-tertiary">
+                            <div class="cont-us-block">
+                                <ul class="pb-2">
+                                    <li class="mb-3">
+                                        <a href="javascript:void(0);" class="text-white py-3 pl-4 pr-2 d-flex align-items-center justify-content-between close-nav"><span>Navigation</span>
+                                            <i class="p-3 bg-transparent fi fi-long-arrow" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./mobile.html" class="active text-white py-2 px-3 d-block"><i class="p-3 mr-2 fi fi-dashboard" aria-hidden="true"></i>
+                                            <span>Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./my-program-finder-mobile.html" class="text-white py-2 px-3 d-block"><i class="p-3 mr-2 fi fi-finder" aria-hidden="true"></i>
+                                            <span>Program Finder</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./my-application-mobile.html" class="text-white py-2 px-3 d-block"><i class="p-3 mr-2 fi fi-file" aria-hidden="true"></i>
+                                            <span>My Applications</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./my-queries-mobile.html" class="text-white py-2 px-3 d-block"><i class="p-3 mr-2 fi fi-queries" aria-hidden="true"></i>
+                                            <span>My Queries</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./my-communications-mobile.html" class="text-white py-2 px-3 d-block"><i class="p-3 mr-2 fi fi-chat-faq" aria-hidden="true"></i>
+                                            <span>My Communication</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./my-payments-mobile.html" class="text-white py-2 px-3 d-block"><i class="p-3 mr-2 fi fi-payment" aria-hidden="true"></i>
+                                            <span>My Payment</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./my-faqs-mobile.html" class="text-white py-2 px-3 d-block"><i class="p-3 mr-2 fi fi-faq" aria-hidden="true"></i>
+                                            <span>FAQ's</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./my-activity-mobile.html" class="text-white py-2 px-3 d-block"><i class="p-3 mr-2 fi fi-history" aria-hidden="true"></i>
+                                            <span>My Activity</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i class="p-3 mr-2 fi fi-sign-out" aria-hidden="true"></i>
+                                            <span>Sign Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cont-side-fixed-bg"></div>
+                    </footer>
                 </div>
             </div>
         </div>

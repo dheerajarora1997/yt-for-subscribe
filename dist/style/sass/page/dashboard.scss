@@ -42,6 +42,6 @@
 
 @media only screen and (max-width: 767px ){
     .campaigns .campaign-detail .grid{
-        @include grid(1, .5em, 1em);
+        @include grid(1, .1em, .2em);
     }
 }

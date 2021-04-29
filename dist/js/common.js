@@ -8,9 +8,13 @@ $(document).ready(function () {
         $(".sidebar ul.nav li:first-child i").toggleClass("fi-long-arrow-left fi-navigation");
         $(".wrapper").toggleClass("active");
     });
-});
 
-$(function(){
-    $("template#sidebar").load("sidebar.html");
-    $("#header").load("header.html");
-  });
+    function openSidebar() {
+        $(".cont-rght-side-fixed").toggleClass("open");
+    }
+
+    $(".cont-side-fixed-bg, .cont-rght-side-fixed, .mob-nav, .close-nav").click(function () {
+        openSidebar();
+    });
+
+});
