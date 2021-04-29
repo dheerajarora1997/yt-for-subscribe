@@ -9,3 +9,8 @@ $(document).ready(function () {
         $(".wrapper").toggleClass("active");
     });
 });
+
+$(function(){
+    $("template#sidebar").load("sidebar.html");
+    $("#header").load("header.html");
+  });

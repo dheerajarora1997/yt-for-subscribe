@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>FAQ's</title>
     <link rel="stylesheet" href="./dist/style/css/style.css">
-    <link rel="stylesheet" href="./dist/style/css/page/dashboard.css">
+    <link rel="stylesheet" href="./dist/style/css/page/faqs.css">
 </head>
 
 <body>
@@ -126,8 +126,9 @@
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle content-none" href="javascript:void(0);" id="profileDropdown"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle content-none" href="javascript:void(0);"
+                                        id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
                                         <div class="block bg-secondary text-white p-2 text-sm rounded-circle">
                                             RP
                                         </div>
@@ -173,74 +174,33 @@
                     </header>
                     <div class="page-content px-5">
                         <section class="pt-3">
-                            <div class="alert alert-info alert-dismissible fade show" role="alert">
-                                <small>Hey John!</small> Alert example.
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
                             <div class="page-heading">
                                 <h1 class="h3">Hi John</h1>
                                 <p class="">Welcome to our website. Here are the following Campaigns.</p>
                             </div>
-                            <div class="campaigns">
-                                <div class="card mb-3 border-0 shadow-lg rounded-lg overflow-hidden">
-                                    <div class="card-body bg-white">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="channel-info d-flex justify-content-between">
-                                                <div class="channel-detail d-flex flex-column pr-3">
-                                                    <!-- <i class="fa fa-youtube-square fa-4x"></i> -->
-                                                    <div class="channel-logo mb-2">
-                                                        <img src="./dist/img/yt-logo.png" class="img-fluid" aria-hidden="true" alt="channel logo">
-                                                    </div>
-                                                    <h3 class="h5 text-truncate">Video Title || Channel Name</h3>
-                                                </div>
-                                                <div class="campaign-detail px-3">
-                                                    <div class="grid">
-                                                        <div class="like-col px-3 d-flex flex-column">
-                                                            <small class="text-muted">Likes</small>
-                                                            <span>33</span>
-                                                        </div>
-                                                        <div class="cmnt-col px-3 d-flex flex-column">
-                                                            <small class="text-muted">Comments</small>
-                                                            <span>33</span>
-                                                        </div>
-                                                        <div class="sub-col px-3 d-flex flex-column">
-                                                            <small class="text-muted">Subscribers</small>
-                                                            <span>33</span>
-                                                        </div>
-                                                        <div class="cam-col px-3 d-flex flex-column">
-                                                            <small class="text-muted">Campaign Type</small>
-                                                            <span>100 Likes</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex flex-row align-items-center px-3 pt-3">
-                                                        <div class="">
-                                                            <small class="text-muted">Campaign Start Date :</small>
-                                                            <span class="text-tertiary">23 Apr, 2021</span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center px-4">
-                                                            <small class="text-muted">Campaign Status :</small>
-                                                            <div class="progress ml-3 rounded-pill">
-                                                                <div class="bg-tertiary progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
-                                                              </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="campaign-action d-flex flex-column">
-                                                <a href="" class="px-5 btn btn-outline-tertiary mb-3">View</a>
-                                                <a href="" class="px-5 btn btn-danger">Delete</a>
-                                            </div>
-                                        </div>
+                            <div class="faq-accordions">
+                                <div class="card mb-3 border-0 shadow-lg rounded-lg overflow-hidden" itemscope
+                                    itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                    <div class="card-header bg-white">
+                                        <button
+                                            class="btn btn-link btn-block text-left pl-0 text-decoration-none shadow-none position-relative"
+                                            type="button" data-toggle="collapse" data-target="#faq-4"
+                                            aria-expanded="false" aria-controls="faq-4">
+                                            <h3 class="h6 mb-0 font-medium text-base" itemprop="name">Am I eligible
+                                                to participate
+                                                in the next rounds of Counseling if I have been allotted a seat?
+                                            </h3>
+                                        </button>
                                     </div>
-                                </div>
-                                <div class="card mb-3 border-dashed bg-white border-secondary shadow">
-                                    <div class="text-center">
-                                        <a href="javascript:void(0);" class="py-5 d-inline-block w-100">
-                                            <i class="fa fa-plus fa-lg text-secondary" aria-hidden="true"></i>
-                                            <span class="d-block text-secondary">Create a new campaign</span>
-                                        </a>
+                                    <div id="faq-4" class="collapse" data-parent="#faq-accordion" itemscope
+                                        itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                        <div class="card-body">
+                                            <p class="mb-2" itemprop="text">
+                                                The fee structure for B.Tech programs (all campus included) are
+                                                available here - <a href="javascript:void(0)"
+                                                    class="primary-color">https://www.srmist.edu.in/admission-india/engineering/fees/tuition-fee</a>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
