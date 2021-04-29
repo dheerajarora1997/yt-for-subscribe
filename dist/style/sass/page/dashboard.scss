@@ -1,5 +1,22 @@
-.campaigns{
-    .progress{
-        min-width: 250px;
+@import '../abstracts/variable-overwrite';
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+
+.campaigns {
+    .progress {
+        min-width: 200px;
+    }
+    .channel-detail{
+
+        h3{
+            display: block;
+            width: 200px;
+        }
+    }
+
+    .campaign-detail {
+        .grid {
+            @include grid(4, .5em, 1em);
+        }
     }
 }

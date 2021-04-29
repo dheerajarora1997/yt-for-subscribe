@@ -72,7 +72,7 @@
                 <div class="content">
                     <header class="px-5">
                         <nav class="navbar align-items-center border-bottom px-0">
-                            <a href="javascript:void(0);" class="navbar-brand d-flex">
+                            <a href="javascript:void(0);" class="navbar-brand d-flex text-tertiary">
                                 <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
                             </a>
                             <ul class="navbar-nav ml-auto flex-row align-items-center">
@@ -173,7 +173,7 @@
                     </header>
                     <div class="page-content px-5">
                         <section class="pt-3">
-                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <div class="alert alert-info alert-dismissible fade show" role="alert">
                                 <small>Hey John!</small> Alert example.
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -184,16 +184,16 @@
                                 <p class="">Welcome to our website. Here are the following Campaigns.</p>
                             </div>
                             <div class="campaigns">
-                                <div class="card border-0 shadow-lg rounded-lg overflow-hidden">
+                                <div class="card mb-3 border-0 shadow-lg rounded-lg overflow-hidden">
                                     <div class="card-body bg-light">
                                         <div class="d-flex justify-content-between">
                                             <div class="channel-info d-flex justify-content-between">
                                                 <div class="channel-detail d-flex flex-column pr-3">
                                                     <i class="fa fa-youtube-square fa-4x"></i>
-                                                    <h3 class="h5">Channel Name</h3>
+                                                    <h3 class="h5 text-truncate">Channel Name or Video Name</h3>
                                                 </div>
                                                 <div class="campaign-detail px-3">
-                                                    <div class="d-grid">
+                                                    <div class="grid">
                                                         <div class="like-col px-3 d-flex flex-column">
                                                             <small class="text-muted">Likes</small>
                                                             <span>33</span>
@@ -206,11 +206,15 @@
                                                             <small class="text-muted">Subscribers</small>
                                                             <span>33</span>
                                                         </div>
+                                                        <div class="cam-col px-3 d-flex flex-column">
+                                                            <small class="text-muted">Campaign Type</small>
+                                                            <span>100 Likes</span>
+                                                        </div>
                                                     </div>
                                                     <div class="d-flex flex-row align-items-center px-3 pt-3">
                                                         <div class="">
-                                                            <small class="text-muted">Campaign Type :</small>
-                                                            <span class="text-tertiary">100 Likes</span>
+                                                            <small class="text-muted">Campaign Start Date :</small>
+                                                            <span class="text-tertiary">23 Apr, 2021</span>
                                                         </div>
                                                         <div class="d-flex align-items-center px-4">
                                                             <small class="text-muted">Campaign Status :</small>
@@ -222,10 +226,18 @@
                                                 </div>
                                             </div>
                                             <div class="campaign-action d-flex flex-column">
-                                                <a href="" class="btn btn-outline-tertiary mb-3">View</a>
-                                                <a href="" class="btn btn-danger">Delete</a>
+                                                <a href="" class="px-5 btn btn-outline-tertiary mb-3">View</a>
+                                                <a href="" class="px-5 btn btn-danger">Delete</a>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 border-dashed bg-light border-secondary shadow">
+                                    <div class="py-5 text-center ">
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-plus fa-lg text-secondary" aria-hidden="true"></i>
+                                            <span class="d-block text-secondary">Create a new campaign</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
