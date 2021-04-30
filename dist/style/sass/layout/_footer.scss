@@ -10,7 +10,7 @@ footer {
     z-index: 9;
     nav ul {
         list-style-type: none;
-        @include grid(5, .5em, 1em);
+        @include grid(5, .5em, .25em);
 
         a {
             @extend %flex-center;
