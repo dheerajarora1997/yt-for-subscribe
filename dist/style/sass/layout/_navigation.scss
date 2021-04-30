@@ -5,8 +5,9 @@ nav.navbar .navbar-nav .dropdown .nav-link.dropdown-toggle {
         font-size: 25px;
     }
 }
+
 .navbar-brand {
-    img{
+    img {
         height: 38px;
     }
 }
@@ -76,22 +77,16 @@ nav.navbar .navbar-nav .dropdown .nav-link.dropdown-toggle {
                 display: inline-block;
                 width: 100%;
 
-                a {
-                    &:hover {
-                        color: var(--primary-text-color);
-                    }
-
-                    i {
-                        color: var(--primary-text-color);
-                        border-radius: 100%;
-                        @extend .d-inline-block;
-                    }
+                a i {
+                    border-radius: 100%;
+                    @extend .d-inline-block;
                 }
+
 
 
                 a.active i,
                 a:hover i {
-                    background: rgba(206,18,18, 0.125);
+                    background: rgba(255,255,255,.2);
                 }
 
                 &:first-child {

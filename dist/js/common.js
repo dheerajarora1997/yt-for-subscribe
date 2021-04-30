@@ -13,7 +13,7 @@ $(document).ready(function () {
         $(".cont-rght-side-fixed").toggleClass("open");
     }
 
-    $(".cont-side-fixed-bg, .cont-rght-side-fixed, .mob-nav, .close-nav").click(function () {
+    $(".cont-side-fixed-bg, .cont-rght-side-fixed, .mob-nav").click(function () {
         openSidebar();
     });
 
