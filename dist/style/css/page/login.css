@@ -1,1 +1,1 @@
-.login-page{display:flex;justify-content:center;align-items:center}.login-page{width:100%;height:100vh;background:#f1f1f1}.login-page-form{min-width:430px;background:#fff}/*# sourceMappingURL=login.css.map */
+.login-page{display:flex;justify-content:center;align-items:center}.login-page{width:100%;height:100vh;background-image:url(../../../img/cap.jpg);background-image:url(../../../img/car.webp);background-color:#f1f1f1;background-size:contain}.login-page-form{min-width:430px;background:#fff}/*# sourceMappingURL=login.css.map */
