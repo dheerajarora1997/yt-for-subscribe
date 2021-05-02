@@ -43,7 +43,7 @@ select {
 
 .floating-input {
     position: relative;
-    padding-top: 20px;
+    padding-top: 5px;
 
     label {
         position: absolute;
@@ -64,8 +64,9 @@ select {
       position: relative;
 
       &:not(:placeholder-shown)+label {
-        top: 0;
+        top: -10px;
         opacity: 1;
+        font-size: 80%;
       }
     }
 }
