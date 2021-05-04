@@ -16,6 +16,7 @@
 .fi {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'Font Icon' !important;
+    display: inline-block;
     speak: never;
     font-style: normal;
     font-weight: normal;
@@ -25,6 +26,77 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  .fi-coin-stacks:before {
+    content: "\e92b";
+  }
+  .fi-stopwatch:before {
+    content: "\e92c";
+  }
+  .fi-correction:before {
+    content: "\e92d";
+  }
+  .fi-share-people:before {
+    content: "\e92e";
+  }
+  .fi-share:before {
+    content: "\e92f";
+  }
+  .fi-price-tag:before {
+    content: "\e930";
+  }
+  .fi-premium:before {
+    content: "\e931";
+  }
+  .fi-vip:before {
+    content: "\e932";
+  }
+  .fi-album:before {
+    content: "\e933";
+  }
+  .fi-video-player:before {
+    content: "\e934";
+  }
+  .fi-live-streaming:before {
+    content: "\e935";
+  }
+  .fi-play-square:before {
+    content: "\e936";
+  }
+  .fi-sale:before {
+    content: "\e937";
+  }
+
+  .fi-view:before {
+    content: "\e90f";
+  }
+  .fi-wallet:before {
+    content: "\e922";
+  }
+  .fi-coins:before {
+    content: "\e923";
+  }
+  .fi-like:before {
+    content: "\e924";
+  }
+  .fi-youtube-play:before {
+    content: "\e925";
+  }
+  .fi-website:before {
+    content: "\e926";
+  }
+  .fi-youtube:before {
+    content: "\e927";
+  }
+  .fi-desktop-video:before {
+    content: "\e928";
+  }
+  .fi-community:before {
+    content: "\e929";
+  }
+  .fi-subscribe:before {
+    content: "\e92a";
   }
 
   .fi-faq:before {

@@ -1,0 +1,43 @@
+.campaigns {
+    .progress {
+        min-width: 200px;
+    }
+    .channel-detail{
+        h3{
+            width: 200px;
+            @extend %text-truncate-2;
+        }
+        .channel-logo{
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .campaign-detail {
+        .grid {
+            @include grid(4, .5em, 1em);
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1024px ){
+    .campaigns .channel-detail h3{
+        width: 150px;
+    }
+}
+@media only screen and (max-width: 1023px ){
+    .campaigns .channel-detail h3{
+        width: 100%;
+    }
+    .campaigns .campaign-detail .grid{
+        @include grid(2, .5em, 1em);
+    }
+
+}
+
+@media only screen and (max-width: 767px ){
+    .campaigns .campaign-detail .grid{
+        @include grid(1, .1em, .2em);
+    }
+}

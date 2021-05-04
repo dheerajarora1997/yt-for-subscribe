@@ -2,7 +2,6 @@ footer {
     width: calc(100% - 34px);
     padding: 10px 0;
     position: fixed;
-    // bottom: 0;
     left: 17px;
     bottom: 15px;
     background: #fff;
@@ -19,7 +18,7 @@ footer {
                 border-radius: 100%;
                 pointer-events: none;
                 min-width: 52px;
-                font-size: 1.25rem  !important;
+                font-size: 1.5rem  !important;
             }
             &.active i,
             &:hover i{
