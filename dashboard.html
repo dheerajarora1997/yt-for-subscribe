@@ -66,13 +66,13 @@
                             </a>
                             <ul class="navbar-nav ml-auto flex-row align-items-center">
                                 <li class="nav-item">
-                                    <a href="javascript:void(0);" class="btn btn-tertiary mr-3">
+                                    <a href="#coin-campaign"  data-toggle="modal" class="btn btn-tertiary mr-3">
                                         Earn Coins
                                     </a>
                                 </li>
                                 <li class="nav-item d-none d-sm-inline-block">
                                     <a href="javascript:void(0);" class="btn btn-outline-tertiary mr-3">
-                                        <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+                                        <i class="fa fa-connectdevelop mr-2" aria-hidden="true"></i>
                                         789
                                     </a>
                                 </li>
@@ -352,14 +352,14 @@
                 </div>
             </div>
         </div>
-        <div class="modal" id="create-campaign" data-backdrop="static" data-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal" id="create-campaign" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h2 class="h5 modal-title">Create Campaign</h2>
-                        <button class="close" data-dismiss="modal">
-                            <i class="fa fa-times" aria-hidden="true"></i>
+                        <button class="btn btn-outline-secondary" data-dismiss="modal">
+                            Close
+                            <span class="fa-lg" aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
@@ -488,6 +488,52 @@
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="coin-campaign" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="h5 modal-title">Earn Coins</h2>
+                        <button class="btn btn-outline-secondary" data-dismiss="modal">
+                            Close
+                            <span class="fa-lg" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <iframe width="100%" height="250" src="https://www.youtube.com/embed/gU9KRJYtg5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-6 border-right">
+                                <div class="flex-center py-2">
+                                    <h3 class="font-weight-light mb-0 mr-3">60</h3>
+                                    <h5 class="font-weight-light mb-0">Seconds</h5>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="flex-center py-2">
+                                    <h3 class="font-weight-light mb-0 mr-3">45</h3>
+                                    <h5 class="font-weight-light mb-0">Coins</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer flex-nowrap">
+                        <div class="col-6">
+                            <label class="switch">
+                                <input type="checkbox" id="auto-play">
+                                <span class="slider round"></span>
+                              </label>
+                              <label for="auto-play" class="btn">Auto Play</label>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-tertiary w-100">See Other</button>
                         </div>
                     </div>
                 </div>
