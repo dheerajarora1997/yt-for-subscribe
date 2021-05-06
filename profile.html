@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./dist/style/css/style.css">
+    <link rel="stylesheet" href="./dist/style/css/page/profile.css">
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid p-0">
+            <div class="wrapper active">
+                <div class="sidebar bg-tertiary text-white d-none d-md-flex">
+                    <ul class="nav nav-sidebar flex-nowrap flex-column w-100">
+                        <li class="text-center w-100 d-block py-1  mb-2">
+                            <a href="javascript:void(0);" class="w-100 d-flex align-items-center pl-2 pr-3 py-1">
+                                <i class="fi fi-navigation p-2" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="./dashboard.html" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-dashboard p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Dashboard"></i>
+                                <span class="ml-3">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="#" class="active w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-album p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Campaign" aria-hidden="true"></i>
+                                <span class="ml-3">Campaign</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="#" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-payment p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Payment History" aria-hidden="true"></i>
+                                <span class="ml-3">Payment History</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="./faqs.html" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-faq p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="FAQ's"></i>
+                                <span class="ml-3">FAQ's</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="./activity-log.html" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-history p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Activity Logs"></i>
+                                <span class="ml-3">Activity Logs</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block mt-auto">
+                            <a href="javascript:void(0);" class="w-100 d-flex align-items-center pl-2 pr-3">
+                                <i class="fi fi-sign-out p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Sign Out" aria-hidden="true"></i>
+                                <span class="ml-3">Sign Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <header class="px-4 px-sm-5">
+                        <nav class="navbar align-items-center border-bottom px-0">
+                            <a href="javascript:void(0);" class="navbar-brand d-flex text-tertiary">
+                                <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+                            </a>
+                            <ul class="navbar-nav ml-auto flex-row align-items-center">
+                                <li class="nav-item">
+                                    <a href="#coin-campaign" data-toggle="modal" class="btn btn-tertiary mr-3">
+                                        Earn Coins
+                                    </a>
+                                </li>
+                                <li class="nav-item d-none d-sm-inline-block">
+                                    <a href="javascript:void(0);" class="btn btn-outline-tertiary mr-3">
+                                        <i class="fi fi-coin-stacks mr-2" aria-hidden="true"></i>
+                                        789
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle content-none" href="javascript:void(0);"
+                                        id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <div class="block bg-secondary text-white p-2 text-sm rounded-circle">
+                                            RP
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-menu border-0 p-0 menu-right">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="./profile.html" class="font-medium text-tertiary">
+                                                    Ritvik Pathak
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="./dashboard.html" class="font-weight-normal text-tertiary">
+                                                    <i class="fi fi-dashboard mr-2 primary-color"
+                                                        aria-hidden="true"></i>
+                                                    My Dashboard
+                                                </a>
+                                            </li>
+
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="./profile.html" class="font-weight-normal text-tertiary">
+                                                    <i class="fi fi-user-o mr-2 primary-color" aria-hidden="true"></i>
+                                                    My Profile
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="javascript:void(0);" class="font-weight-normal text-tertiary">
+                                                    <i class="fi fi-sign-out mr-2 primary-color" aria-hidden="true"></i>
+                                                    Logout
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <div class="page-content px-sm-5 px-4">
+                        <section class="pt-3">
+                            <div class="page-heading mb-4 d-flex justify-content-between">
+                                <h1 class="h3">Profile</h1>
+                                <!-- <button type="button" class="btn btn-tertiary" data-target="#create-campaign" data-toggle="modal">Create a new campaign</button> -->
+                            </div>
+                            <div class="profile campaigns">
+                                <div class="card mb-3 border-0 shadow-lg rounded-lg overflow-hidden">
+                                    <div class="card-body bg-white">
+                                        <div class="channel-info d-flex flex-lg-row flex-column">
+                                            <div class="channel-detail d-flex flex-column pr-3">
+                                                <div class="channel-logo mb-2">
+                                                    <img src="./dist/img/yt-logo.png" class="img-fluid"
+                                                        aria-hidden="true" alt="channel logo">
+                                                </div>
+                                            </div>
+                                            <div class="campaign-detail px-0 px-md-3 w-100">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-sm-6">
+                                                        <div class="row">
+                                                            <div class="col-sm-12 col-md-6">
+                                                                <div class="floating-input mb-3">
+                                                                    <input type="text" class="form-control pl-3" id="name" value="User Name" readonly>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-6">
+                                                                <div class="floating-input mb-3">
+                                                                    <input type="email" class="form-control pl-3" id="email-id" value="Email Address" readonly>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class="floating-input mb-3">
+                                                                    <input type="email" class="form-control pl-3" id="email-id" Value="Channel Url`" readonly>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <footer class="rounded-pill d-md-none d-block">
+                        <nav>
+                            <ul class="mb-0">
+                                <li><a href="./faqs.html" data-toggle="tooltip" data-placement="top"
+                                        data-container="body" title="" data-original-title="FAQ's"><i
+                                            class="fi fi-faq p-3 text-tertiary"></i></a></li>
+                                <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                        data-container="body" title="" data-original-title="Refer and Earn"><i
+                                            class="fi fi-share p-3 text-tertiary"></i></a></li>
+                                <li><a href="javascript:void(0);" class="active" data-toggle="tooltip"
+                                        data-placement="top" data-container="body" title=""
+                                        data-original-title="Dashboard"><i
+                                            class="fi fi-dashboard p-3 text-tertiary"></i></a></li>
+                                <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                        data-container="body" title="" data-original-title="Campaigns"><i
+                                            class="fi fi-album p-3 text-tertiary"></i></a></li>
+                                <li><a href="javascript:void(0);" class="mob-nav"><i
+                                            class="fi fi-navigation p-3 text-tertiary"></i></a></li>
+                            </ul>
+                        </nav>
+                        <div class="cont-rght-side-fixed bg-tertiary">
+                            <div class="cont-us-block">
+                                <ul class="pb-2">
+                                    <li class="mb-3">
+                                        <a href="javascript:void(0);"
+                                            class="text-white py-3 pl-4 pr-2 d-flex align-items-center justify-content-between close-nav">
+                                            <span>Navigation</span>
+                                            <i class="p-3 bg-transparent fi fi-long-arrow" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="active text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-dashboard" aria-hidden="true"></i>
+                                            <span>Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-finder" aria-hidden="true"></i>
+                                            <span>Program Finder</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-file" aria-hidden="true"></i>
+                                            <span>My Applications</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-queries" aria-hidden="true"></i>
+                                            <span>My Queries</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-chat-faq" aria-hidden="true"></i>
+                                            <span>My Communication</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-payment" aria-hidden="true"></i>
+                                            <span>My Payment</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-faq" aria-hidden="true"></i>
+                                            <span>FAQ's</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-history" aria-hidden="true"></i>
+                                            <span>My Activity</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-sign-out" aria-hidden="true"></i>
+                                            <span>Sign Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cont-side-fixed-bg"></div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="create-campaign" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="h5 modal-title">Create Campaign</h2>
+                        <button class="btn btn-outline-secondary" data-dismiss="modal">
+                            Close
+                            <span class="fa-lg" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 col-sm-9">
+                                <div class="floating-input">
+                                    <input type="text" id="video-url" class="form-control"
+                                        placeholder="Add video url here" required>
+                                    <label for="video-url">Add video url here</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3">
+                                <button class="btn w-100 btn-tertiary mt-2 mt-sm-0">Add</button>
+                            </div>
+                        </div>
+                        <hr class="border-secondary" />
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./dist/img/car.webp" type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="./dist/img/cap.jpg" type="image/jpeg">
+                                    <img src="./dist/img/cap.jpg" class="lazyload img-fluid mb-2 mb-sm-0"
+                                        alt="post application">
+                                </picture>
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="d-inline-block w-100">
+                                    <h3 class="h5 mb-3">VIdeo Title</h3>
+                                    <h5 class="h6 text-muted font-medium-light">Channel Name</h5>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-4 align-items-center">
+                                        <i class="fi fi-like text-muted" aria-hidden="true"></i>
+                                        <small class="text-muted">250</small>
+                                    </div>
+                                    <div class="col-4 align-items-center">
+                                        <i class="fi fi-sms text-muted" aria-hidden="true"></i>
+                                        <small class="text-muted">12</small>
+                                    </div>
+                                    <div class="col-4 align-items-center">
+                                        <i class="fi fi-youtube-play text-muted" aria-hidden="true"></i>
+                                        <small class="text-muted">12:00</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="border-secondary" />
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <h3 class="h5">Campaign settings</h3>
+                            </div>
+                            <div class="col-sm-8">
+                                <h3 class="h6 mb-0">Number of Views</h3>
+                            </div>
+                            <div class="col-sm-4">
+                                <select class="form-control mb-sm-0 mb-3">
+                                    <option>30</option>
+                                    <option>60</option>
+                                    <option>90</option>
+                                    <option>120</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-8">
+                                <h3 class="h6 mb-0">Number of Likes</h3>
+                            </div>
+                            <div class="col-sm-4">
+                                <select class="form-control mb-sm-0 mb-3">
+                                    <option>30</option>
+                                    <option>60</option>
+                                    <option>90</option>
+                                    <option>120</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-8">
+                                <h3 class="h6 mb-0">Number of Subscribers</h3>
+                            </div>
+                            <div class="col-sm-4">
+                                <select class="form-control mb-sm-0 mb-3">
+                                    <option>Null</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-8">
+                                <h3 class="h6 mb-0">Watch time required</h3>
+                            </div>
+                            <div class="col-sm-4">
+                                <select class="form-control mb-sm-0 mb-3">
+                                    <option>45</option>
+                                    <option>60</option>
+                                    <option>90</option>
+                                </select>
+                            </div>
+                        </div>
+                        <hr class="border-secondary" />
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h3 class="h5">
+                                    Vip Account
+                                    <small class="text-tertiary">(Reduce 10%)</small>
+                                </h3>
+                            </div>
+                            <div class="div col-4">
+                                <button class="btn btn-tertiary w-100">Upgrade</button>
+                            </div>
+                            <div class="col-8">
+                                <h3 class="h6">Total Coins Uses</h3>
+                            </div>
+                            <div class="col-4">
+                                <div class="floating-input">
+                                    <input type="text" class="form-control pl-1" readonly value="100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12 col-sm-6">
+                                <button class="btn btn-outline-tertiary w-100 mb-3 mb-sm-0"
+                                    data-dismiss="modal">Cancel</button>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <button class="btn btn-tertiary w-100" data-dismiss="modal">Create</button>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <div class="jumbotron py-2 px-3">
+                                    <ul class="text-muted small pl-3 mb-0 mt-2">
+                                        <li>Do not Create too many campaigns for one video, Youtube isn't going to count
+                                            many views from one IP in very short time.</li>
+                                        <li>Video length must be 45 seconds at least.</li>
+                                        <li>YouTube needs 72 hours to update views from third party apps. so please wait
+                                            72 hours at least to be counted from YouTube You can use YouTube Studio to
+                                            follow up views in real time.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="coin-campaign" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="h5 modal-title">Earn Coins</h2>
+                        <button class="btn btn-outline-secondary" data-dismiss="modal">
+                            Close
+                            <span class="fa-lg" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <iframe width="100%" height="250" src="https://www.youtube.com/embed/gU9KRJYtg5E"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-6 border-right">
+                                <div class="flex-center py-2">
+                                    <h3 class="font-weight-light mb-0 mr-3">60</h3>
+                                    <h5 class="font-weight-light mb-0">Seconds</h5>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="flex-center py-2">
+                                    <h3 class="font-weight-light mb-0 mr-3">45</h3>
+                                    <h5 class="font-weight-light mb-0">Coins</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer flex-nowrap justify-content-center">
+                        <div class="col-6">
+                            <label class="switch mb-0">
+                                <input type="checkbox" id="auto-play">
+                                <span class="slider round"></span>
+                            </label>
+                            <label for="auto-play" class="btn px-1">Auto Play</label>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-tertiary w-100">See Other</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="delete-modal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p class="text-center h5 font-weight-light">Are you sure you want to <span
+                                class="text-tertiary font-weight-normal">Delete</span> this campaign?</p>
+                    </div>
+                    <div class="modal-footer flex-nowrap justify-content-center">
+                        <div class="col-6">
+                            <button data-dismiss="modal" class="btn btn-outline-tertiary w-100">No</button>
+                        </div>
+                        <div class="col-6">
+                            <button data-dismiss="modal" class="btn btn-tertiary w-100">Yes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="dist/js/vendor/jquery/jquery.min.js"></script>
+<script src="dist/js/vendor/bootstrap-js/popper.min.js"></script>
+<script src="dist/js/vendor/bootstrap-js/bootstrap.min.js"></script>
+<script src="dist/js/common.js"></script>
+
+</html>

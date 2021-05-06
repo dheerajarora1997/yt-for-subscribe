@@ -1,0 +1,9 @@
+@import '../abstracts/variable-overwrite';
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+
+@import '../components/campaign-card';
+
+.campaigns .channel-detail .channel-logo{
+    width: 100px;
+}
