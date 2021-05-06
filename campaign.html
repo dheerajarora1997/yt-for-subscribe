@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="./dist/style/css/style.css">
-    <link rel="stylesheet" href="./dist/style/css/page/dashboard.css">
+    <link rel="stylesheet" href="./dist/style/css/page/campaign.css">
 </head>
 <body>
     <main>
@@ -21,14 +21,14 @@
                             </a>
                         </li>
                         <li class="text-center w-100 d-block">
-                            <a href="./dashboard.html" class="active w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                            <a href="./dashboard.html" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
                                 <i class="fi fi-dashboard p-2" data-toggle="tooltip" data-placement="right"
                                     data-container="body" title="Dashboard"></i>
                                 <span class="ml-3">Dashboard</span>
                             </a>
                         </li>
                         <li class="text-center w-100 d-block">
-                            <a href="#" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                            <a href="#" class="active w-100 d-flex align-items-center pl-2 pr-3 mb-1">
                                 <i class="fi fi-album p-2" data-toggle="tooltip" data-placement="right"
                                     data-container="body" title="Campaign" aria-hidden="true"></i>
                                 <span class="ml-3">Campaign</span>
@@ -125,68 +125,9 @@
                     </header>
                     <div class="page-content px-sm-5 px-4">
                         <section class="pt-3">
-                            <div class="alert alert-info alert-dismissible fade show" role="alert">
-                                <small>Hey John!</small> Alert example.
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="page-heading">
-                                <h1 class="h3">Hi John</h1>
-                                <p class="">Welcome to our website. Here are the following Campaigns.</p>
-                            </div>
-                            <div class="yt-info">
-                                <div class="row">
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <div
-                                            class="card  bg-quaternary border-0 mb-3 shadow-lg rounded-lg overflow-hidden">
-                                            <div class="card-body p-3">
-                                                <h2 class="h6 font-weight-light">Total Views</h2>
-                                                <div class="d-flex">
-                                                    <i class="fi fi-view fa-lg"></i>
-                                                    <h3 class="h5 ml-3">250+</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <div class="card bg-quinary border-0 mb-3 shadow-lg rounded-lg overflow-hidden">
-                                            <div class="card-body p-3">
-                                                <h2 class="h6 font-weight-light">Total Subscribers</h2>
-                                                <div class="d-flex">
-                                                    <i class="fi fi-community  fa-lg"></i>
-                                                    <h3 class="h5 ml-3">250</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <div class="card bg-senary border-0 mb-3 shadow-lg rounded-lg overflow-hidden">
-                                            <div class="card-body p-3">
-                                                <h2 class="h6 font-weight-light">Watch Time</h2>
-                                                <div class="d-flex">
-                                                    <i class="fi fi-youtube-play  fa-lg"></i>
-                                                    <h3 class="h5 ml-3">250/Hr</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <div
-                                            class="card bg-septenary border-0 mb-3 shadow-lg rounded-lg overflow-hidden">
-                                            <div class="card-body p-3">
-                                                <h2 class="h6 font-weight-light">Running Campaign</h2>
-                                                <div class="d-flex">
-                                                    <i class="fi fi-album fa-lg"></i>
-                                                    <h3 class="h5 ml-3">250+</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card border-o">
-
-                                </div>
+                            <div class="page-heading mb-4 d-flex justify-content-between">
+                                <h1 class="h3">Campaigns</h1>
+                                <button type="button" class="btn btn-tertiary" data-target="#create-campaign" data-toggle="modal">Create a new campaign</button>
                             </div>
                             <div class="campaigns">
                                 <div class="card mb-3 border-0 shadow-lg rounded-lg overflow-hidden">
@@ -249,6 +190,138 @@
                                                 class="campaign-action d-flex flex-lg-column flex-sm-row flex-column mt-3 mt-lg-0 justify-content-center">
                                                 <a href=""
                                                     class="px-5 btn btn-outline-tertiary mr-0 mr-sm-3 mr-lg-0 mb-3 mb-sm-0 mb-lg-3 ">View</a>
+                                                <a href="#delete-modal" data-toggle="modal"
+                                                    class="px-5 btn btn-tertiary">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 border-0 shadow-lg rounded-lg overflow-hidden">
+                                    <div class="card-body bg-white">
+                                        <div class="d-flex justify-content-between flex-lg-row flex-column">
+                                            <div
+                                                class="channel-info d-flex justify-content-between flex-lg-row flex-column">
+                                                <div class="channel-detail d-flex flex-column pr-3">
+                                                    <div class="channel-logo mb-2">
+                                                        <img src="./dist/img/yt-logo.png" class="img-fluid"
+                                                            aria-hidden="true" alt="channel logo">
+                                                    </div>
+                                                    <h3 class="h5">Video Title || Channel Name</h3>
+                                                </div>
+                                                <div class="campaign-detail px-0 px-md-3">
+                                                    <div class="grid">
+                                                        <div
+                                                            class="like-col px-0 px-xl-3 d-flex align-items-center align-items-sm-start justify-content-between flex-lg-column flex-row">
+                                                            <small class="text-muted">Likes</small>
+                                                            <span>44</span>
+                                                        </div>
+                                                        <div
+                                                            class="cmnt-col px-0 px-xl-3 d-flex align-items-center align-items-sm-start justify-content-between flex-lg-column flex-row">
+                                                            <small class="text-muted">Comments</small>
+                                                            <span>44</span>
+                                                        </div>
+                                                        <div
+                                                            class="sub-col px-0 px-xl-3 d-flex align-items-center align-items-sm-start justify-content-between flex-lg-column flex-row">
+                                                            <small class="text-muted">Subscribers</small>
+                                                            <span>44</span>
+                                                        </div>
+                                                        <div
+                                                            class="cam-col px-0 px-xl-3 d-flex align-items-center align-items-sm-start justify-content-between flex-lg-column flex-row">
+                                                            <small class="text-muted">Campaign</small>
+                                                            <span>100 Likes</span>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex flex-column flex-xl-row justify-content-between px-0 px-xl-3 pt-1">
+                                                        <div
+                                                            class="d-flex align-items-center mb-1 mb-sm-0 justify-content-between justify-content-sm-start">
+                                                            <small class="text-muted">Start Date :</small>
+                                                            <span class="text-tertiary ml-3">23 Apr, 2021</span>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex flex-column flex-sm-row align-items-sm-center px-0 px-xl-4  ml-xl-2">
+                                                            <small class="text-muted mb-2 mb-sm-0">Campaign Status
+                                                                :</small>
+                                                            <div class="progress rounded-pill ml-0 ml-sm-3 ">
+                                                                <div class="bg-tertiary progress-bar progress-bar-striped progress-bar-animated"
+                                                                    role="progressbar" aria-valuenow="60"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width: 60%">60%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="campaign-action d-flex flex-lg-column flex-sm-row flex-column mt-3 mt-lg-0 justify-content-center">
+                                                <a href=""
+                                                    class="px-5 btn btn-outline-tertiary mr-0 mr-sm-3 mr-lg-0 mb-3 mb-sm-0 mb-lg-3 ">View</a>
+                                                <a href="#delete-modal" data-toggle="modal"
+                                                    class="px-5 btn btn-tertiary">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 border-0 shadow-lg rounded-lg overflow-hidden">
+                                    <div class="card-body bg-white">
+                                        <div class="d-flex justify-content-between flex-lg-row flex-column">
+                                            <div
+                                                class="channel-info d-flex justify-content-between flex-lg-row flex-column">
+                                                <div class="channel-detail d-flex flex-column pr-3">
+                                                    <div class="channel-logo mb-2">
+                                                        <img src="./dist/img/yt-logo.png" class="img-fluid"
+                                                            aria-hidden="true" alt="channel logo">
+                                                    </div>
+                                                    <h3 class="h5">Video Title || Channel Name</h3>
+                                                </div>
+                                                <div class="campaign-detail px-0 px-md-3">
+                                                    <div class="grid">
+                                                        <div
+                                                            class="like-col px-0 px-xl-3 d-flex align-items-center align-items-sm-start justify-content-between flex-lg-column flex-row">
+                                                            <small class="text-muted">Likes</small>
+                                                            <span>88</span>
+                                                        </div>
+                                                        <div
+                                                            class="cmnt-col px-0 px-xl-3 d-flex align-items-center align-items-sm-start justify-content-between flex-lg-column flex-row">
+                                                            <small class="text-muted">Comments</small>
+                                                            <span>88</span>
+                                                        </div>
+                                                        <div
+                                                            class="sub-col px-0 px-xl-3 d-flex align-items-center align-items-sm-start justify-content-between flex-lg-column flex-row">
+                                                            <small class="text-muted">Subscribers</small>
+                                                            <span>88</span>
+                                                        </div>
+                                                        <div
+                                                            class="cam-col px-0 px-xl-3 d-flex align-items-center align-items-sm-start justify-content-between flex-lg-column flex-row">
+                                                            <small class="text-muted">Campaign</small>
+                                                            <span>100 Likes</span>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex flex-column flex-xl-row justify-content-between px-0 px-xl-3 pt-1">
+                                                        <div
+                                                            class="d-flex align-items-center mb-1 mb-sm-0 justify-content-between justify-content-sm-start">
+                                                            <small class="text-muted">Start Date :</small>
+                                                            <span class="text-tertiary ml-3">23 Apr, 2021</span>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex flex-column flex-sm-row align-items-sm-center px-0 px-xl-4  ml-xl-2">
+                                                            <small class="text-muted mb-2 mb-sm-0">Campaign Status
+                                                                :</small>
+                                                            <div class="progress rounded-pill ml-0 ml-sm-3 ">
+                                                                <div class="bg-tertiary progress-bar progress-bar-striped progress-bar-animated"
+                                                                    role="progressbar" aria-valuenow="100"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width: 100%">100%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="campaign-action d-flex flex-lg-column flex-sm-row flex-column mt-3 mt-lg-0 justify-content-center">
+                                                <a href=""
+                                                    class="px-5 btn btn-outline-tertiary mr-0 mr-sm-3 mr-lg-0 mb-3 mb-sm-0 mb-lg-3 ">Restart</a>
                                                 <a href="#delete-modal" data-toggle="modal"
                                                     class="px-5 btn btn-tertiary">Delete</a>
                                             </div>
