@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./dist/style/css/style.css">
+    <link rel="stylesheet" href="./dist/style/css/page/campaign.css">
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid p-0">
+            <div class="wrapper active">
+                <div class="sidebar bg-tertiary text-white d-none d-md-flex">
+                    <ul class="nav nav-sidebar flex-nowrap flex-column w-100">
+                        <li class="text-center w-100 d-block py-1  mb-2">
+                            <a href="javascript:void(0);" class="w-100 d-flex align-items-center pl-2 pr-3 py-1">
+                                <i class="fi fi-navigation p-2" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="./dashboard.html" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-dashboard p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Dashboard"></i>
+                                <span class="ml-3">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="#" class="active w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-album p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Campaign" aria-hidden="true"></i>
+                                <span class="ml-3">Campaign</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="#" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-payment p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Payment History" aria-hidden="true"></i>
+                                <span class="ml-3">Payment History</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="./faqs.html" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-faq p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="FAQ's"></i>
+                                <span class="ml-3">FAQ's</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="./activity-log.html" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-history p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Activity Logs"></i>
+                                <span class="ml-3">Activity Logs</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block mt-auto">
+                            <a href="javascript:void(0);" class="w-100 d-flex align-items-center pl-2 pr-3">
+                                <i class="fi fi-sign-out p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Sign Out" aria-hidden="true"></i>
+                                <span class="ml-3">Sign Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <header class="px-4 px-sm-5">
+                        <nav class="navbar align-items-center border-bottom px-0">
+                            <a href="javascript:void(0);" class="navbar-brand d-flex text-tertiary">
+                                <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+                            </a>
+                            <ul class="navbar-nav ml-auto flex-row align-items-center">
+                                <li class="nav-item">
+                                    <a href="#coin-campaign" data-toggle="modal" class="btn btn-tertiary mr-3">
+                                        Earn Coins
+                                    </a>
+                                </li>
+                                <li class="nav-item d-none d-sm-inline-block">
+                                    <a href="javascript:void(0);" class="btn btn-outline-tertiary mr-3">
+                                        <i class="fi fi-coin-stacks mr-2" aria-hidden="true"></i>
+                                        789
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle content-none" href="javascript:void(0);"
+                                        id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <div class="block bg-secondary text-white p-2 text-sm rounded-circle">
+                                            RP
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-menu border-0 p-0 menu-right">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="./profile.html" class="font-medium text-tertiary">
+                                                    Ritvik Pathak
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="./dashboard.html" class="font-weight-normal text-tertiary">
+                                                    <i class="fi fi-dashboard mr-2 primary-color"
+                                                        aria-hidden="true"></i>
+                                                    My Dashboard
+                                                </a>
+                                            </li>
+
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="./profile.html" class="font-weight-normal text-tertiary">
+                                                    <i class="fi fi-user-o mr-2 primary-color" aria-hidden="true"></i>
+                                                    My Profile
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="javascript:void(0);" class="font-weight-normal text-tertiary">
+                                                    <i class="fi fi-sign-out mr-2 primary-color" aria-hidden="true"></i>
+                                                    Logout
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <div class="page-content px-sm-5 px-4">
+                        <section class="pt-3">
+                            <div class="page-heading">
+                                <h1 class="h3">Payments and Transactions</h1>
+                            </div>
+                        </section>
+                    </div>
+                    <footer class="rounded-pill d-md-none d-block">
+                        <nav>
+                            <ul class="mb-0">
+                                <li><a href="./faqs.html" data-toggle="tooltip" data-placement="top"
+                                        data-container="body" title="" data-original-title="FAQ's"><i
+                                            class="fi fi-faq p-3 text-tertiary"></i></a></li>
+                                <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                        data-container="body" title="" data-original-title="Refer and Earn"><i
+                                            class="fi fi-share p-3 text-tertiary"></i></a></li>
+                                <li><a href="javascript:void(0);" class="active" data-toggle="tooltip"
+                                        data-placement="top" data-container="body" title=""
+                                        data-original-title="Dashboard"><i
+                                            class="fi fi-dashboard p-3 text-tertiary"></i></a></li>
+                                <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                        data-container="body" title="" data-original-title="Campaigns"><i
+                                            class="fi fi-album p-3 text-tertiary"></i></a></li>
+                                <li><a href="javascript:void(0);" class="mob-nav"><i
+                                            class="fi fi-navigation p-3 text-tertiary"></i></a></li>
+                            </ul>
+                        </nav>
+                        <div class="cont-rght-side-fixed bg-tertiary">
+                            <div class="cont-us-block">
+                                <ul class="pb-2">
+                                    <li class="mb-3">
+                                        <a href="javascript:void(0);"
+                                            class="text-white py-3 pl-4 pr-2 d-flex align-items-center justify-content-between close-nav">
+                                            <span>Navigation</span>
+                                            <i class="p-3 bg-transparent fi fi-long-arrow" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="active text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-dashboard" aria-hidden="true"></i>
+                                            <span>Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-finder" aria-hidden="true"></i>
+                                            <span>Program Finder</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-file" aria-hidden="true"></i>
+                                            <span>My Applications</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-queries" aria-hidden="true"></i>
+                                            <span>My Queries</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-chat-faq" aria-hidden="true"></i>
+                                            <span>My Communication</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-payment" aria-hidden="true"></i>
+                                            <span>My Payment</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-faq" aria-hidden="true"></i>
+                                            <span>FAQ's</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-history" aria-hidden="true"></i>
+                                            <span>My Activity</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-sign-out" aria-hidden="true"></i>
+                                            <span>Sign Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cont-side-fixed-bg"></div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
