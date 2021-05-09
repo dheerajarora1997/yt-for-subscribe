@@ -4,7 +4,12 @@
 
 @import '../components/campaign-card';
 
-.campaigns .channel-detail .channel-logo{
+.profile .channel-detail .channel-logo{
     width: 100px;
     height: 100px;
+}
+
+.yt-channel-added .channel-detail .channel-logo{
+    width: 60px;
+    height: 60px;
 }
