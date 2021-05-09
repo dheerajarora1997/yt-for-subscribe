@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="./dist/style/css/style.css">
-    <link rel="stylesheet" href="./dist/style/css/page/campaign.css">
+    <link rel="stylesheet" href="./dist/style/css/page/payments.css">
 </head>
 
 <body>
@@ -126,8 +126,104 @@
                     </header>
                     <div class="page-content px-sm-5 px-4">
                         <section class="pt-3">
-                            <div class="page-heading">
-                                <h1 class="h3">Payments and Transactions</h1>
+                            <div class="page-heading mb-3">
+                                <h1 class="h3">Payments and Transactions History</h1>
+                            </div>
+                            <div class="payments">
+                                <div class="card mb-3 border-0 shadow-lg rounded-lg overflow-hidden">
+                                    <div class="card-body">
+                                        <div class="row justify-content-between">
+                                            <div class="col-3">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="wallet-icon p-2 rounded-circle shadow">
+                                                        <i class="fi fi-wallet fa-lg text-tertiary"
+                                                            aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="ml-2">
+                                                        <h4 class="small text-muted mb-1">Current Coins</h4>
+                                                        <span>3000</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2 text-right border-left">
+                                                <h4 class="small text-muted mb-1">Total Balance</h4>
+                                                <i class="fi fi-coin-stacks text-tertiary" aria-hidden="true"></i>
+                                                <span>3000</span>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="row align-items-center">
+                                            <div class="col-sm-3">
+                                                <button class="btn btn-outline-tertiary w-100">Buy 5000 Coins</button>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <button class="btn btn-outline-tertiary w-100">Buy 10000 Coins</button>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="row justify-content-between">
+                                                    <div class="col-8">
+                                                        <div class="floating-input">
+                                                            <input type="number" class="form-control" id="buy-coins"
+                                                                placeholder="Enter Coins">
+                                                            <label for="buy-coins">Enter Coins</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <button class="btn btn-tertiary w-100">Buy Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="pt-3">
+                            <div class="transactions mb-4">
+                                <div class="card mb-3 border-0 shadow-lg rounded-lg overflow-hidden">
+                                    <div class="card-body">
+                                        <h3 class="text-muted small font-weight-bold">Recent Transactions</h3>
+                                        <table class="table small table-striped mb-0">
+                                            <thead>
+                                                <tr class="font-weight-light">
+                                                    <th>Date</th>
+                                                    <th>Transaction</th>
+                                                    <th>Amount</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2021-04-24 08:00:05 EST</td>
+                                                    <td>Register</td>
+                                                    <td>3000</td>
+                                                    <td>Completed</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2021-04-24 08:00:05 EST</td>
+                                                    <td>Campaign Created</td>
+                                                    <td>3000</td>
+                                                    <td>Completed</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2021-04-24 08:00:05 EST</td>
+                                                    <td>Reward Earned</td>
+                                                    <td>3000</td>
+                                                    <td>Completed</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <nav class="small" aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-end">
+                                      <li class="page-item"><a class="page-link text-tertiary" href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                                      <li class="page-item"><a class="page-link bg-tertiary text-white" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link text-tertiary" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link text-tertiary" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link text-tertiary" href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                                    </ul>
+                                  </nav>
                             </div>
                         </section>
                     </div>
@@ -225,4 +321,5 @@
         </div>
     </main>
 </body>
+
 </html>

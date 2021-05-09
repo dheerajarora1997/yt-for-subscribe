@@ -1,0 +1,11 @@
+@import '../abstracts/variable-overwrite';
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+
+
+.wallet-icon{
+    width: 50px;
+    height: 50px;
+    @extend %flex-center;
+    // background: #fef5f5;
+}
