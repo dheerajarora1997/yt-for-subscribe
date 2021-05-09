@@ -14,7 +14,7 @@ nav.navbar .navbar-nav .dropdown .nav-link.dropdown-toggle {
 
 // Mobile Nav
 
-.cont-rght-side-fixed {
+.mob-sidebar-bg {
     width: 60% !important;
     height: 100%;
     position: fixed;
@@ -44,12 +44,12 @@ nav.navbar .navbar-nav .dropdown .nav-link.dropdown-toggle {
 }
 
 @media only screen and (max-width:767px) {
-    .cont-rght-side-fixed {
+    .mob-sidebar-bg {
         width: 80% !important;
     }
 }
 
-.cont-side-fixed-bg {
+.mob-sidebar {
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
@@ -60,11 +60,11 @@ nav.navbar .navbar-nav .dropdown .nav-link.dropdown-toggle {
     display: none;
 }
 
-.cont-rght-side-fixed.open+.cont-side-fixed-bg {
+.mob-sidebar-bg.open+.mob-sidebar {
     display: block;
 }
 
-.cont-rght-side-fixed {
+.mob-sidebar-bg {
     .cont-us-block {
         ul {
             display: flex;

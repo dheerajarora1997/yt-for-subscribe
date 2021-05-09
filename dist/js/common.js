@@ -3,18 +3,24 @@ $(function () {
 });
 
 
+function openNav(){
+    $(".wrapper").toggleClass("active");
+}
+
+
+
 $(document).ready(function () {
-    $(".sidebar ul.nav li:first-child").click(function () {
+    $(".sidebar ul.nav li:first-child, .sidebar-bg").click(function () {
         $(".sidebar ul.nav li:first-child i").toggleClass("fi-long-arrow-left fi-navigation");
-        $(".wrapper").toggleClass("active");
+        openNav();
     });
 
-    function openSidebar() {
-        $(".cont-rght-side-fixed").toggleClass("open");
+    function mobileNav() {
+        $(".mob-sidebar-bg").toggleClass("open");
     }
 
-    $(".cont-side-fixed-bg, .cont-rght-side-fixed, .mob-nav").click(function () {
-        openSidebar();
+    $(".mob-sidebar, .mob-nav, .close-nav").click(function () {
+        mobileNav();
     });
 
 });
