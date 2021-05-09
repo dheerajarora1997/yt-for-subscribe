@@ -133,7 +133,7 @@
                                 <div class="card mb-3 border-0 shadow-lg rounded-lg overflow-hidden">
                                     <div class="card-body">
                                         <div class="row justify-content-between">
-                                            <div class="col-3">
+                                            <div class="col-6 col-lg-3">
                                                 <div class="d-flex align-items-center">
                                                     <div class="wallet-icon p-2 rounded-circle shadow">
                                                         <i class="fi fi-wallet fa-lg text-tertiary"
@@ -145,7 +145,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-2 text-right border-left">
+                                            <div class="col-6 col-lg-2 text-right border-left">
                                                 <h4 class="small text-muted mb-1">Total Balance</h4>
                                                 <i class="fi fi-coin-stacks text-tertiary" aria-hidden="true"></i>
                                                 <span>3000</span>
@@ -153,22 +153,26 @@
                                         </div>
                                         <hr />
                                         <div class="row align-items-center">
-                                            <div class="col-sm-3">
-                                                <button class="btn btn-outline-tertiary w-100">Buy 5000 Coins</button>
+                                            <div class="col-md-12 col-lg-6">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <button class="btn btn-outline-tertiary w-100 mb-3 mb-lg-0">Buy 5000 Coins</button>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <button class="btn btn-outline-tertiary w-100 mb-3 mb-lg-0">Buy 10000 Coins</button>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-sm-3">
-                                                <button class="btn btn-outline-tertiary w-100">Buy 10000 Coins</button>
-                                            </div>
-                                            <div class="col-sm-6">
+                                            <div class="col-md-12 col-lg-6">
                                                 <div class="row justify-content-between">
-                                                    <div class="col-8">
+                                                    <div class="col-7 col-sm-8">
                                                         <div class="floating-input">
                                                             <input type="number" class="form-control" id="buy-coins"
                                                                 placeholder="Enter Coins">
                                                             <label for="buy-coins">Enter Coins</label>
                                                         </div>
                                                     </div>
-                                                    <div class="col-4">
+                                                    <div class="col-5 col-sm-4">
                                                         <button class="btn btn-tertiary w-100">Buy Now</button>
                                                     </div>
                                                 </div>
@@ -183,36 +187,38 @@
                                 <div class="card mb-3 border-0 shadow-lg rounded-lg overflow-hidden">
                                     <div class="card-body">
                                         <h3 class="text-muted small font-weight-bold">Recent Transactions</h3>
-                                        <table class="table small table-striped mb-0">
-                                            <thead>
-                                                <tr class="font-weight-light">
-                                                    <th>Date</th>
-                                                    <th>Transaction</th>
-                                                    <th>Amount</th>
-                                                    <th>Status</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>2021-04-24 08:00:05 EST</td>
-                                                    <td>Register</td>
-                                                    <td>3000</td>
-                                                    <td>Completed</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2021-04-24 08:00:05 EST</td>
-                                                    <td>Campaign Created</td>
-                                                    <td>3000</td>
-                                                    <td>Completed</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2021-04-24 08:00:05 EST</td>
-                                                    <td>Reward Earned</td>
-                                                    <td>3000</td>
-                                                    <td>Completed</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="table-responsive">
+                                            <table class="table small table-striped mb-0">
+                                                <thead>
+                                                    <tr class="font-weight-light">
+                                                        <th>Date</th>
+                                                        <th>Transaction</th>
+                                                        <th>Amount</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2021-04-24 08:00:05 EST</td>
+                                                        <td>Register</td>
+                                                        <td>3000</td>
+                                                        <td>Completed</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021-04-24 08:00:05 EST</td>
+                                                        <td>Campaign Created</td>
+                                                        <td>3000</td>
+                                                        <td>Completed</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021-04-24 08:00:05 EST</td>
+                                                        <td>Reward Earned</td>
+                                                        <td>3000</td>
+                                                        <td>Completed</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                                 <nav class="small" aria-label="Page navigation example">
