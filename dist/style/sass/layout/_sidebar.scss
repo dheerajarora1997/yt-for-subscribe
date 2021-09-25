@@ -26,6 +26,7 @@
 
         i {
             @extend %flex-center;
+            @include transition-ease(all, .5s);
             pointer-events: none;
             font-size: 1.25rem;
             min-width: 46px;
