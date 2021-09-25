@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./dist/style/css/style.css">
+    <link rel="stylesheet" href="./dist/style/css/page/dashboard.css">
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid p-0">
+            <div class="wrapper active">
+                <div class="sidebar bg-tertiary text-white d-none d-md-flex">
+                    <ul class="nav nav-sidebar flex-nowrap flex-column w-100">
+                        <li class="text-center w-100 d-block py-1">
+                            <a href="javascript:void(0);" class="w-100 d-flex align-items-center pl-2 pr-3 py-1">
+                                <i class="fi fi-navigation p-2" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="./dashboard.html" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-dashboard p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Dashboard"></i>
+                                <span class="ml-3">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="./campaign.html" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-album p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Campaign" aria-hidden="true"></i>
+                                <span class="ml-3">Campaign</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="./payments.html" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-wallet p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Payment History" aria-hidden="true"></i>
+                                <span class="ml-3">Payment History</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="./faqs.html" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-faq p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="FAQ's"></i>
+                                <span class="ml-3">FAQ's</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="./queries.html" class="active w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-queries p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Queries"></i>
+                                <span class="ml-3">Queries</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="./activity-log.html" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-history p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Activity Logs"></i>
+                                <span class="ml-3">Activity Logs</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block mt-auto">
+                            <a href="./login.html" class="w-100 d-flex align-items-center pl-2 pr-3">
+                                <i class="fi fi-sign-out p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Sign Out" aria-hidden="true"></i>
+                                <span class="ml-3">Sign Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <header class="px-4 px-sm-5">
+                        <nav class="navbar align-items-center border-bottom px-0">
+                            <a href="javascript:void(0);" class="navbar-brand d-flex text-tertiary">
+                                <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+                            </a>
+                            <ul class="navbar-nav ml-auto flex-row align-items-center">
+                                <li class="nav-item">
+                                    <a href="#coin-campaign" data-toggle="modal" class="btn btn-tertiary mr-3">
+                                        Earn Coins
+                                    </a>
+                                </li>
+                                <li class="nav-item d-none d-sm-inline-block">
+                                    <a href="./payments.html" class="btn btn-outline-tertiary mr-3">
+                                        <i class="fi fi-coin-stacks mr-2" aria-hidden="true"></i>
+                                        789
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle content-none" href="javascript:void(0);"
+                                        id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <div class="block bg-secondary text-white p-2 text-sm rounded-circle">
+                                            RP
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-menu border-0 p-0 menu-right">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="./profile.html" class="font-medium text-tertiary">
+                                                    Ritvik Pathak
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="./dashboard.html" class="font-weight-normal text-tertiary">
+                                                    <i class="fi fi-dashboard mr-2 primary-color"
+                                                        aria-hidden="true"></i>
+                                                    My Dashboard
+                                                </a>
+                                            </li>
+
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="./profile.html" class="font-weight-normal text-tertiary">
+                                                    <i class="fi fi-user-o mr-2 primary-color" aria-hidden="true"></i>
+                                                    My Profile
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item py-3 border-0">
+                                                <a href="javascript:void(0);" class="font-weight-normal text-tertiary">
+                                                    <i class="fi fi-sign-out mr-2 primary-color" aria-hidden="true"></i>
+                                                    Logout
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <div class="page-content px-sm-5 px-4">
+                        <section class="pt-3">
+                            <div class="page-heading mb-3 d-flex justify-content-between">
+                                <h1 class="h3">My Queries</h1>
+                                <a href="javascript:void(0);" class="btn btn-tertiary">Add New</a>
+                            </div>
+                            <!-- <div class="payments">
+                                <div class="card mb-3 border-0 shadow-lg rounded-lg overflow-hidden">
+                                    <div class="card-body">
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 col-lg-3">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="wallet-icon p-2 rounded-circle shadow">
+                                                        <i class="fi fi-wallet fa-lg text-tertiary"
+                                                            aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="ml-2">
+                                                        <h4 class="small text-muted mb-1">Current Coins</h4>
+                                                        <span>3000</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-lg-2 text-right border-left">
+                                                <h4 class="small text-muted mb-1">Total Balance</h4>
+                                                <i class="fi fi-coin-stacks text-tertiary" aria-hidden="true"></i>
+                                                <span>3000</span>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="row align-items-center">
+                                            <div class="col-md-12 col-lg-6">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <button class="btn btn-outline-tertiary w-100 mb-3 mb-lg-0">Buy 5000 Coins</button>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <button class="btn btn-outline-tertiary w-100 mb-3 mb-lg-0">Buy 10000 Coins</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-6">
+                                                <div class="row justify-content-between">
+                                                    <div class="col-7 col-sm-8">
+                                                        <div class="floating-input">
+                                                            <input type="number" class="form-control" id="buy-coins"
+                                                                placeholder="Enter Coins">
+                                                            <label for="buy-coins">Enter Coins</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-5 col-sm-4">
+                                                        <button class="btn btn-tertiary w-100">Buy Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </section>
+                        <section class="pt-3">
+                            <div class="transactions mb-4">
+                                <div class="card mb-3 border-0 shadow-lg rounded-lg overflow-hidden">
+                                    <div class="card-body">
+                                        <h3 class="text-muted small font-weight-bold">My Queries</h3>
+                                        <div class="table-responsive">
+                                            <table class="table small table-striped mb-0">
+                                                <thead>
+                                                    <tr class="font-weight-light">
+                                                        <th>Date</th>
+                                                        <th>Title</th>
+                                                        <th>Status</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2021-04-24 08:00:05 EST</td>
+                                                        <td>Register</td>
+                                                        <td> <span class="badge badge-success p-1 font-weight-normal">Closed</span></td>
+                                                        <td>Link</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021-04-24 08:00:05 EST</td>
+                                                        <td>Register</td>
+                                                        <td> <span class="badge badge-warning p-1 font-weight-normal">In Progress</span></td>
+                                                        <td>Link</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021-04-24 08:00:05 EST</td>
+                                                        <td>Register</td>
+                                                        <td> <span class="badge badge-tertiary p-1 font-weight-normal">Open</span></td>
+                                                        <td>Link</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav class="small" aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-end">
+                                      <li class="page-item"><a class="page-link text-tertiary" href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                                      <li class="page-item"><a class="page-link bg-tertiary text-white" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link text-tertiary" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link text-tertiary" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link text-tertiary" href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                        </section>
+                    </div>
+                    <footer class="rounded-pill d-md-none d-block">
+                        <nav>
+                            <ul class="mb-0">
+                                <li><a class="active" href="./queries.html"><i class="fi fi-queries p-3 text-tertiary"></i></a></li>
+                                <li><a href="./faqs.html"><i class="fi fi-faq p-3 text-tertiary"></i></a></li>
+                                <li><a href="./dashboard.html"><i class="fi fi-dashboard p-3 text-tertiary"></i></a></li>
+                                <li><a href="./campaign.html"><i class="fi fi-album p-3 text-tertiary"></i></a></li>
+                                <li><a href="javascript:void(0);" class="mob-nav"><i
+                                            class="fi fi-navigation p-3 text-tertiary"></i></a></li>
+                            </ul>
+                        </nav>
+                        <div class="mob-sidebar-bg bg-tertiary">
+                            <div class="cont-us-block">
+                                <ul class="pb-2">
+                                    <li class="mb-3">
+                                        <a href="javascript:void(0);"
+                                            class="text-white py-3 pl-4 pr-2 d-flex align-items-center justify-content-between close-nav"><span>Navigation</span>
+                                            <i class="p-3 bg-transparent fi fi-long-arrow" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./dashboard.html" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-dashboard" aria-hidden="true"></i>
+                                            <span>Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./campaign.html" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-album" aria-hidden="true"></i>
+                                            <span>Campaigns</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./payment-history.html" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-wallet" aria-hidden="true"></i>
+                                            <span>Payment History</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./faqs.html" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-faq" aria-hidden="true"></i>
+                                            <span>Faq's</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./queries.html" class="active text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-queries" aria-hidden="true"></i>
+                                            <span>Queries</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./activity-logs.html" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-history" aria-hidden="true"></i>
+                                            <span>Activity Logs</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
+                                                class="p-3 mr-2 fi fi-sign-out" aria-hidden="true"></i>
+                                            <span>Sign Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mob-sidebar"></div>
+                    </footer>
+                </div>
+                <div class="sidebar-bg"></div>
+            </div>
+        </div>
+    </main>
+    <script src="dist/js/vendor/jquery/jquery.min.js"></script>
+    <script src="dist/js/vendor/bootstrap-js/popper.min.js"></script>
+    <script src="dist/js/vendor/bootstrap-js/bootstrap.min.js"></script>
+    <script src="dist/js/common.js"></script>
+</body>
+
+</html>
