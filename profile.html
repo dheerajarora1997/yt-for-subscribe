@@ -16,13 +16,13 @@
             <div class="wrapper active">
                 <div class="sidebar bg-tertiary text-white d-none d-md-flex">
                     <ul class="nav nav-sidebar flex-nowrap flex-column w-100">
-                        <li class="text-center w-100 d-block py-1  mb-2">
+                        <li class="text-center w-100 d-block py-1">
                             <a href="javascript:void(0);" class="w-100 d-flex align-items-center pl-2 pr-3 py-1">
                                 <i class="fi fi-navigation p-2" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li class="text-center w-100 d-block">
-                            <a href="./dashboard.html" class="active w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                            <a href="./dashboard.html" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
                                 <i class="fi fi-dashboard p-2" data-toggle="tooltip" data-placement="right"
                                     data-container="body" title="Dashboard"></i>
                                 <span class="ml-3">Dashboard</span>
@@ -47,6 +47,13 @@
                                 <i class="fi fi-faq p-2" data-toggle="tooltip" data-placement="right"
                                     data-container="body" title="FAQ's"></i>
                                 <span class="ml-3">FAQ's</span>
+                            </a>
+                        </li>
+                        <li class="text-center w-100 d-block">
+                            <a href="./queries.html" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                                <i class="fi fi-queries p-2" data-toggle="tooltip" data-placement="right"
+                                    data-container="body" title="Queries"></i>
+                                <span class="ml-3">Queries</span>
                             </a>
                         </li>
                         <li class="text-center w-100 d-block">
@@ -176,8 +183,8 @@
                             </div>
                             <div class="yt-channel-added">
                                 <div class="row">
-                                    <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <div class="card mb-3 border-0 shadow-lg rounded-lg overflow-hidden">
+                                    <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                                        <div class="card border-0 shadow-lg rounded-lg overflow-hidden">
                                             <div class="card-body bg-white">
                                                 <div class="channel-info d-flex justify-content-between flex-column">
                                                     <div class="channel-detail d-flex align-items-center flex-row">
@@ -214,14 +221,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-12 col-md-6 col-lg-4">
-                                        <div class="card mb-3 border-dashed shadow-lg rounded-lg overflow-hidden">
-                                            <div class="text-center">
-                                                <a href="javascript:void(0);" class="text-secondary py-4 w-100  d-inline-block">
-                                                    <i class="fa fa-plus d-block" aria-hidden="true"></i>
-                                                    Add New Channel
-                                                </a>
-                                            </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                                        <div class="card h-100 border-dashed shadow-lg rounded-lg overflow-hidden text-center">
+                                            <a href="javascript:void(0);" class="text-secondary py-4 w-100  d-inline-block h-100 d-flex align-items-center justify-content-center flex-column">
+                                                <i class="fa fa-plus d-block" aria-hidden="true"></i>
+                                                Add New Channel
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -231,84 +236,53 @@
                     <footer class="rounded-pill d-md-none d-block">
                         <nav>
                             <ul class="mb-0">
-                                <li><a href="./faqs.html" data-toggle="tooltip" data-placement="top"
-                                        data-container="body" title="" data-original-title="FAQ's"><i
-                                            class="fi fi-faq p-3 text-tertiary"></i></a></li>
-                                <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
-                                        data-container="body" title="" data-original-title="Refer and Earn"><i
-                                            class="fi fi-share p-3 text-tertiary"></i></a></li>
-                                <li><a href="javascript:void(0);" class="active" data-toggle="tooltip"
-                                        data-placement="top" data-container="body" title=""
-                                        data-original-title="Dashboard"><i
-                                            class="fi fi-dashboard p-3 text-tertiary"></i></a></li>
-                                <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
-                                        data-container="body" title="" data-original-title="Campaigns"><i
-                                            class="fi fi-album p-3 text-tertiary"></i></a></li>
-                                <li><a href="javascript:void(0);" class="mob-nav"><i
-                                            class="fi fi-navigation p-3 text-tertiary"></i></a></li>
+                                <li><a href="./queries.html"><i class="fi fi-queries p-3 text-tertiary"></i></a></li>
+                                <li><a href="./faqs.html"><i class="fi fi-faq p-3 text-tertiary"></i></a></li>
+                                <li><a href="./dashboard.html"><i class="fi fi-dashboard p-3 text-tertiary"></i></a></li>
+                                <li><a href="./campaign.html"><i class="fi fi-album p-3 text-tertiary"></i></a></li>
+                                <li><a href="javascript:void(0);" class="mob-nav"><i class="fi fi-navigation p-3 text-tertiary"></i></a></li>
                             </ul>
                         </nav>
                         <div class="mob-sidebar-bg bg-tertiary">
                             <div class="cont-us-block">
                                 <ul class="pb-2">
                                     <li class="mb-3">
-                                        <a href="javascript:void(0);"
-                                            class="text-white py-3 pl-4 pr-2 d-flex align-items-center justify-content-between close-nav">
-                                            <span>Navigation</span>
+                                        <a href="javascript:void(0);" class="text-white py-3 pl-4 pr-2 d-flex align-items-center justify-content-between close-nav"><span>Navigation</span>
                                             <i class="p-3 bg-transparent fi fi-long-arrow" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="active text-white py-2 px-3 d-block"><i
-                                                class="p-3 mr-2 fi fi-dashboard" aria-hidden="true"></i>
+                                        <a href="./dashboard.html" class="text-white py-2 px-3 d-block"><i class="p-3 mr-2 fi fi-dashboard" aria-hidden="true"></i>
                                             <span>Dashboard</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
-                                                class="p-3 mr-2 fi fi-finder" aria-hidden="true"></i>
-                                            <span>Program Finder</span>
+                                        <a href="./campaign.html" class="text-white py-2 px-3 d-block"><i class="p-3 mr-2 fi fi-album" aria-hidden="true"></i>
+                                            <span>Campaigns</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
-                                                class="p-3 mr-2 fi fi-file" aria-hidden="true"></i>
-                                            <span>My Applications</span>
+                                        <a href="./payment-history.html" class="text-white py-2 px-3 d-block"><i class="p-3 mr-2 fi fi-wallet" aria-hidden="true"></i>
+                                            <span>Payment History</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
-                                                class="p-3 mr-2 fi fi-queries" aria-hidden="true"></i>
-                                            <span>My Queries</span>
+                                        <a href="./faqs.html" class="text-white py-2 px-3 d-block"><i class="p-3 mr-2 fi fi-faq" aria-hidden="true"></i>
+                                            <span>Faq's</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
-                                                class="p-3 mr-2 fi fi-chat-faq" aria-hidden="true"></i>
-                                            <span>My Communication</span>
+                                        <a href="./queries.html" class="text-white py-2 px-3 d-block"><i class="p-3 mr-2 fi fi-queries" aria-hidden="true"></i>
+                                            <span>Queries</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
-                                                class="p-3 mr-2 fi fi-payment" aria-hidden="true"></i>
-                                            <span>My Payment</span>
+                                        <a href="./activity-logs.html" class="active text-white py-2 px-3 d-block"><i class="p-3 mr-2 fi fi-history" aria-hidden="true"></i>
+                                            <span>Activity Logs</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
-                                                class="p-3 mr-2 fi fi-faq" aria-hidden="true"></i>
-                                            <span>FAQ's</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
-                                                class="p-3 mr-2 fi fi-history" aria-hidden="true"></i>
-                                            <span>My Activity</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i
-                                                class="p-3 mr-2 fi fi-sign-out" aria-hidden="true"></i>
+                                        <a href="javascript:void(0);" class="text-white py-2 px-3 d-block"><i class="p-3 mr-2 fi fi-sign-out" aria-hidden="true"></i>
                                             <span>Sign Out</span>
                                         </a>
                                     </li>

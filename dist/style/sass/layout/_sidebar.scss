@@ -14,11 +14,15 @@
         &:first-child {
             border-bottom: 1px solid;
             border-color: #fff;
+            a:hover{
+                background: none;
+            }
         }
     }
 
     a {
         color: var(--primary-text-color);
+        padding: 5px 0;
 
         i {
             @extend %flex-center;
@@ -33,9 +37,17 @@
             font-size: 1rem;
         }
 
-        &.active i,
-        &:hover i {
-            @extend .rounded-circle;
+        &.active {
+            i {
+                @extend .rounded-circle;
+                background: rgba(255, 255, 255, .28);
+            }
+            &:hover i {
+                background: none;
+            }
+        }
+
+        &:hover {
             background: rgba(255, 255, 255, .28);
         }
 
@@ -99,7 +111,8 @@
         overflow: hidden;
         overflow-y: scroll;
     }
-    .sidebar-bg{
+
+    .sidebar-bg {
         display: block;
     }
 }
