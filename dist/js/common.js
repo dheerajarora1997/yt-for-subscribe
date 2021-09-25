@@ -25,7 +25,6 @@ let currentIndex = 0;
 
 $('#coin-campaign').on('shown.bs.modal', function(){
     $('iframe').attr('src', 'https://www.youtube.com/embed/' + my_array[currentIndex]);
-    console.log(currentIndex);
     currentIndex = 1;
 });
 
