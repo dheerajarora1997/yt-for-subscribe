@@ -78,20 +78,36 @@ nav.navbar .navbar-nav .dropdown .nav-link.dropdown-toggle {
                 width: 100%;
                 font-size: 90%;
 
-                a i {
-                    border-radius: 100%;
-                    @extend .d-inline-block;
+                a {
+                    i {
+                        border-radius: 100%;
+                        @extend .d-inline-block;
+                    }
+
+                    &.active {
+                        i {
+                            @extend .rounded-circle;
+                            background: rgba(255, 255, 255, .28);
+                        }
+
+                        &:hover i {
+                            background: none;
+                        }
+                    }
+
+                    &:hover {
+                        background: rgba(255, 255, 255, .28);
+                    }
                 }
 
 
-
-                a.active i,
-                a:hover i {
-                    background: rgba(255,255,255,.2);
-                }
 
                 &:first-child {
                     border-bottom: 1px solid #fff;
+
+                    a {
+                        background: none;
+                    }
                 }
 
                 &:last-child {
