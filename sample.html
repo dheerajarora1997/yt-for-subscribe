@@ -1,36 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
 </head>
 
 <body>
-    <main>
-        <button>Change</button>
-        <iframe src="" frameborder="0"></iframe>
-    </main>
-    <script src="dist/js/vendor/jquery/jquery.min.js"></script>
-    <script src="dist/js/vendor/bootstrap-js/popper.min.js"></script>
-    <script src="dist/js/vendor/bootstrap-js/bootstrap.min.js"></script>
-    <script src="dist/js/common.js"></script>
     <script>
-        let my_array = ['0Ll5DofUmgE','aRvFOku7w5I','2HNtLfetnNg','nyKNwwiQYcM','ExQe3fXj7t8','i0KO9Js4_dE','ygqbfJOdtmA','gU9KRJYtg5E','sEL5l1dATJw','m8N7onAJexU'];
-        let currentIndex = 1;
-
-        $('button').click(function() {
-            // console.log(my_array[currentIndex]);
-            $('iframe').attr('src', 'https://www.youtube.com/embed/'+ my_array[currentIndex]);
-            if (currentIndex == my_array.length - 1) {
-                currentIndex = 0;
+        window.onload = function() {
+          setTimeout(function() {
+            if ( typeof(window.google_jobrunner) === "undefined" ) {
+              console.log("ad blocker installed");
             } else {
-                currentIndex++;
+              console.log("no ad blocking found.");
             }
-        });
-    </script>
+          }, 10000);
+        };
+      </script>
 </body>
 
 </html>

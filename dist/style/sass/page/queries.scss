@@ -3,11 +3,3 @@
 @import '../abstracts/mixin';
 @import '../../vendor/data-table/main';
 @import '../components/data-table';
-
-
-.wallet-icon{
-    width: 50px;
-    height: 50px;
-    @extend %flex-center;
-    // background: #fef5f5;
-}

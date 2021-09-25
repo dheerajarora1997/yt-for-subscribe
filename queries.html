@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="./dist/style/css/style.css">
-    <link rel="stylesheet" href="./dist/style/css/page/dashboard.css">
+    <link rel="stylesheet" href="./dist/style/css/page/queries.css">
 </head>
 
 <body>
@@ -137,66 +137,14 @@
                                 <h1 class="h3 mb-0">My Queries</h1>
                                 <a href="javascript:void(0);" class="btn btn-tertiary">Add New</a>
                             </div>
-                            <!-- <div class="payments">
-                                <div class="card mb-3 border-0 shadow-lg rounded-lg overflow-hidden">
-                                    <div class="card-body">
-                                        <div class="row justify-content-between">
-                                            <div class="col-6 col-lg-3">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="wallet-icon p-2 rounded-circle shadow">
-                                                        <i class="fi fi-wallet fa-lg text-tertiary"
-                                                            aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="ml-2">
-                                                        <h4 class="small text-muted mb-1">Current Coins</h4>
-                                                        <span>3000</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-lg-2 text-right border-left">
-                                                <h4 class="small text-muted mb-1">Total Balance</h4>
-                                                <i class="fi fi-coin-stacks text-tertiary" aria-hidden="true"></i>
-                                                <span>3000</span>
-                                            </div>
-                                        </div>
-                                        <hr />
-                                        <div class="row align-items-center">
-                                            <div class="col-md-12 col-lg-6">
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <button class="btn btn-outline-tertiary w-100 mb-3 mb-lg-0">Buy 5000 Coins</button>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <button class="btn btn-outline-tertiary w-100 mb-3 mb-lg-0">Buy 10000 Coins</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 col-lg-6">
-                                                <div class="row justify-content-between">
-                                                    <div class="col-7 col-sm-8">
-                                                        <div class="floating-input">
-                                                            <input type="number" class="form-control" id="buy-coins"
-                                                                placeholder="Enter Coins">
-                                                            <label for="buy-coins">Enter Coins</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-5 col-sm-4">
-                                                        <button class="btn btn-tertiary w-100">Buy Now</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
                         </section>
                         <section class="pt-3">
                             <div class="transactions mb-4">
+                                <!-- <h3 class="text-muted small font-weight-bold">My Queries</h3> -->
                                 <div class="card mb-3 border-0 shadow-lg rounded-lg overflow-hidden">
                                     <div class="card-body">
-                                        <h3 class="text-muted small font-weight-bold">My Queries</h3>
                                         <div class="table-responsive">
-                                            <table class="table small table-striped mb-0">
+                                            <table class="table small table-striped mb-0" data-table="true">
                                                 <thead>
                                                     <tr class="font-weight-light">
                                                         <th>Date</th>
@@ -209,19 +157,97 @@
                                                     <tr>
                                                         <td>2021-04-24 08:00:05 EST</td>
                                                         <td>Register</td>
-                                                        <td> <span class="badge badge-success p-1 font-weight-normal rounded">Closed</span></td>
+                                                        <td> <span
+                                                                class="badge badge-success p-1 font-weight-normal rounded">Closed</span>
+                                                        </td>
                                                         <td><a href="javascript:void(0);">View</a></td>
                                                     </tr>
                                                     <tr>
                                                         <td>2021-04-24 08:00:05 EST</td>
                                                         <td>Register</td>
-                                                        <td> <span class="badge badge-warning p-1 font-weight-normal rounded">In Progress</span></td>
+                                                        <td> <span
+                                                                class="badge badge-warning p-1 font-weight-normal rounded">In
+                                                                Progress</span></td>
                                                         <td><a href="javascript:void(0);">View</a></td>
                                                     </tr>
                                                     <tr>
                                                         <td>2021-04-24 08:00:05 EST</td>
                                                         <td>Register</td>
-                                                        <td> <span class="badge badge-tertiary p-1 font-weight-normal rounded">Open</span></td>
+                                                        <td> <span
+                                                                class="badge badge-tertiary p-1 font-weight-normal rounded">Open</span>
+                                                        </td>
+                                                        <td><a href="javascript:void(0);">View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021-04-24 08:00:05 EST</td>
+                                                        <td>Register</td>
+                                                        <td> <span
+                                                                class="badge badge-success p-1 font-weight-normal rounded">Closed</span>
+                                                        </td>
+                                                        <td><a href="javascript:void(0);">View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021-04-24 08:00:05 EST</td>
+                                                        <td>Register</td>
+                                                        <td> <span
+                                                                class="badge badge-warning p-1 font-weight-normal rounded">In
+                                                                Progress</span></td>
+                                                        <td><a href="javascript:void(0);">View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021-04-24 08:00:05 EST</td>
+                                                        <td>Register</td>
+                                                        <td> <span
+                                                                class="badge badge-tertiary p-1 font-weight-normal rounded">Open</span>
+                                                        </td>
+                                                        <td><a href="javascript:void(0);">View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021-04-24 08:00:05 EST</td>
+                                                        <td>Register</td>
+                                                        <td> <span
+                                                                class="badge badge-success p-1 font-weight-normal rounded">Closed</span>
+                                                        </td>
+                                                        <td><a href="javascript:void(0);">View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021-04-24 08:00:05 EST</td>
+                                                        <td>Register</td>
+                                                        <td> <span
+                                                                class="badge badge-warning p-1 font-weight-normal rounded">In
+                                                                Progress</span></td>
+                                                        <td><a href="javascript:void(0);">View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021-04-24 08:00:05 EST</td>
+                                                        <td>Register</td>
+                                                        <td> <span
+                                                                class="badge badge-tertiary p-1 font-weight-normal rounded">Open</span>
+                                                        </td>
+                                                        <td><a href="javascript:void(0);">View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021-04-24 08:00:05 EST</td>
+                                                        <td>Register</td>
+                                                        <td> <span
+                                                                class="badge badge-success p-1 font-weight-normal rounded">Closed</span>
+                                                        </td>
+                                                        <td><a href="javascript:void(0);">View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021-04-24 08:00:05 EST</td>
+                                                        <td>Register</td>
+                                                        <td> <span
+                                                                class="badge badge-warning p-1 font-weight-normal rounded">In
+                                                                Progress</span></td>
+                                                        <td><a href="javascript:void(0);">View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021-04-24 08:00:05 EST</td>
+                                                        <td>Register</td>
+                                                        <td> <span
+                                                                class="badge badge-tertiary p-1 font-weight-normal rounded">Open</span>
+                                                        </td>
                                                         <td><a href="javascript:void(0);">View</a></td>
                                                     </tr>
                                                 </tbody>
@@ -229,24 +255,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <nav class="small" aria-label="Page navigation example">
-                                    <ul class="pagination justify-content-end">
-                                      <li class="page-item"><a class="page-link text-tertiary" href="#"><i class="fa fa-angle-double-left"></i></a></li>
-                                      <li class="page-item"><a class="page-link bg-tertiary text-white" href="#">1</a></li>
-                                      <li class="page-item"><a class="page-link text-tertiary" href="#">2</a></li>
-                                      <li class="page-item"><a class="page-link text-tertiary" href="#">3</a></li>
-                                      <li class="page-item"><a class="page-link text-tertiary" href="#"><i class="fa fa-angle-double-right"></i></a></li>
-                                    </ul>
-                                  </nav>
                             </div>
                         </section>
                     </div>
                     <footer class="rounded-pill d-md-none d-block">
                         <nav>
                             <ul class="mb-0">
-                                <li><a class="active" href="./queries.html"><i class="fi fi-queries p-3 text-tertiary"></i></a></li>
+                                <li><a class="active" href="./queries.html"><i
+                                            class="fi fi-queries p-3 text-tertiary"></i></a></li>
                                 <li><a href="./faqs.html"><i class="fi fi-faq p-3 text-tertiary"></i></a></li>
-                                <li><a href="./dashboard.html"><i class="fi fi-dashboard p-3 text-tertiary"></i></a></li>
+                                <li><a href="./dashboard.html"><i class="fi fi-dashboard p-3 text-tertiary"></i></a>
+                                </li>
                                 <li><a href="./campaign.html"><i class="fi fi-album p-3 text-tertiary"></i></a></li>
                                 <li><a href="javascript:void(0);" class="mob-nav"><i
                                             class="fi fi-navigation p-3 text-tertiary"></i></a></li>
@@ -316,7 +335,21 @@
     <script src="dist/js/vendor/jquery/jquery.min.js"></script>
     <script src="dist/js/vendor/bootstrap-js/popper.min.js"></script>
     <script src="dist/js/vendor/bootstrap-js/bootstrap.min.js"></script>
+    <script src="dist/js/vendor/data-table/app.js"></script>
     <script src="dist/js/common.js"></script>
+    <script>
+        $('[data-table="true"]').DataTable({
+            rowReorder: true,
+            columnDefs: [
+                { orderable: true, className: 'reorder', targets: 0 },
+                { orderable: true, className: 'reorder', targets: 1 },
+                { orderable: false, targets: '_all' },
+                // { orderable: false, targets: 1 },
+                // { "width": "20%", "targets": 0 },
+                // { "width": "40%", "targets": 1 },
+            ],
+        });
+    </script>
 </body>
 
 </html>
