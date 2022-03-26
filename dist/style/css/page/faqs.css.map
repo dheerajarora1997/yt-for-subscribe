@@ -1,1 +1,7 @@
-{"version":3,"sourceRoot":"","sources":["../../sass/components/_accordion.scss","../../sass/abstracts/_variable.scss","../../sass/abstracts/_mixin.scss"],"names":[],"mappings":"CAEQ,6CACI,KCHN,wCDIM,YACA,kBACA,QACA,QACA,eACA,MCNC,KCMX,wBACA,gCACA,6BACA,4BACA,4FAZA,qCACA,6CACA,+BACA,6BACA","file":"faqs.css"}
+{
+"version": 3,
+"mappings": "AAEQ,8CAAQ,CACJ,IAAI,CCHV,uCAAuC,CDIjC,OAAO,CAAE,OAAO,CAChB,QAAQ,CAAE,QAAQ,CAClB,KAAK,CAAE,CAAC,CACR,GAAG,CAAE,GAAG,CACR,SAAS,CAAE,IAAI,CACf,KAAK,CCNJ,IAAe,CCM1B,UAAU,CAAE,YAAsB,CAClC,kBAAkB,CAAE,YAAsB,CAC1C,eAAe,CAAE,YAAsB,CACvC,cAAc,CAAE,YAAsB,CACtC,aAAa,CAAE,YAAsB,CFA/B,oEAA8B,CEZpC,SAAS,CAAE,0BAA0B,CACrC,iBAAiB,CAAE,0BAA0B,CAC7C,cAAc,CAAE,eAAe,CAC/B,YAAY,CAAE,eAAe,CAC7B,aAAa,CAAE,eAAe",
+"sources": ["../../sass/components/_accordion.scss","../../sass/abstracts/_variable.scss","../../sass/abstracts/_mixin.scss"],
+"names": [],
+"file": "faqs.css"
+}
